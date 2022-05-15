@@ -78,10 +78,25 @@ body {
   background-repeat: no-repeat;
 }
 
+.top_img_box {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_img {
+  background-repeat: no-repeat;
+}
+
 .top_man_img {
   /*width: 50%;*/
   height: 100%;
   float: left;
+<<<<<<< Updated upstream
   padding: 10px;
   background-position: left center;
 }
@@ -89,5 +104,54 @@ body {
 .top_text_img {
   padding-top: 290px;
   background-position: right center;
+=======
+  background-position: left center;
+}
+
+.top_text_img {
+  padding-right: 331px;
+  padding-top: 290px;
+  background-position: right center;
+}
+
+.offer {
+  padding-top: 65px;
+  padding-bottom: 96px;
+  background-color: #E5E5E5;
+}
+
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.item {
+  width: 360px;
+  height: 260px;
+}
+
+.item_img {
+  width: 100%;
+}
+
+.item_parent {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.item-acs {
+  height: 180px;
+  width: 100%;
+}
+
+.mgn-right {
+  margin-right: 30px;
+>>>>>>> Stashed changes
 }
 /*# sourceMappingURL=style.css.map */
