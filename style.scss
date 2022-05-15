@@ -15,6 +15,14 @@ $offer-text: uppercase;
     width: 360px;
     height: 260px;
 }
+@mixin h1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+
 @mixin p-text {
     text-transform: $offer-text;
     color: $color-text;
@@ -24,7 +32,7 @@ $offer-text: uppercase;
     text-align: center;
     top: 105px;
     position: absolute;
-    left: 40%;
+    left: 33.3%;
 }
 @mixin p-text-red {
     text-transform: $offer-text;
@@ -34,7 +42,15 @@ $offer-text: uppercase;
     font-weight: bold;
     top: 123px;
     position: absolute;
-    left: 33.3%;
+    left: 30%;
+}
+
+@mixin text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
 }
 
 * {
@@ -163,9 +179,22 @@ body {
         height: 180px;
         width: 100%;
     }
-
 }
 
 .mgn-right {
     margin-right: 30px;
+}
+
+.catalog {
+    background-color: $color-offer;
+    min-height: 1586px;
+ 
+    &_h1 {
+        @include h1;
+    }
+
+    .text {
+        @include text;
+    }
+
 }

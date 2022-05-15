@@ -104,7 +104,7 @@ body {
   text-align: center;
   top: 105px;
   position: absolute;
-  left: 40%;
+  left: 33.3%;
 }
 
 .offer_text_red {
@@ -115,7 +115,7 @@ body {
   font-weight: bold;
   top: 123px;
   position: absolute;
-  left: 33.3%;
+  left: 30%;
 }
 
 .offer_text_acs {
@@ -159,5 +159,26 @@ body {
 
 .mgn-right {
   margin-right: 30px;
+}
+
+.catalog {
+  background-color: #E5E5E5;
+  min-height: 1586px;
+}
+
+.catalog_h1 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  text-align: center;
+}
+
+.catalog .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
