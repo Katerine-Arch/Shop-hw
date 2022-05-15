@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 $font: sans-serif;
 $color-bg: #222222;
 $color-menu:#E8E8E8;
@@ -87,4 +88,136 @@ body {
         padding-top: 290px;
         background-position: right center;
     }
+=======
+$font: sans-serif;
+$color-bg: #222222;
+$color-menu:#E8E8E8;
+$color-top: #F1E4E6;
+$color-offer: #E5E5E5;
+$offer-text: uppercase; 
+
+@mixin flexible () {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin item-size () {
+    width: 360px;
+    height: 260px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $font;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    &_menu {
+        background-color: $color-bg;
+        padding: 0;
+        height: 75px;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    &_menu_list {
+        color: $color-menu;
+        list-style-type: none;
+        display: flex;
+    }
+    
+    .hml-left {
+        position: left;
+    }
+
+    .hml-right {
+        position: right;
+    }
+
+    .hml-icon-left {
+        padding-right: 41px;
+    }
+
+    .hml-icon-left:first-child {
+        padding-left: 231px;
+    }
+
+    .hml-icon-right {
+        padding-right: 33px;
+    }
+
+}
+
+.top {
+    position: relative;
+    background-color: $color-top;
+    height: 764px;
+    
+    &_img_box {
+        max-width: 100%;
+        @include flexible
+    }
+
+    &_img {
+        background-repeat: no-repeat;
+    }
+
+    &_man_img {
+       /*width: 50%;*/
+        height: 100%;
+        float: left;
+        background-position: left center;
+    }
+
+    &_text_img {
+        padding-right: 331px;
+        padding-top: 290px;
+        background-position: right center;
+    }
+}
+
+.offer {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    background-color: $color-offer;
+}
+
+.parent {
+    @include flexible
+    padding-bottom: 30px;
+}
+
+.item {
+    @include item-size
+    
+    &_img {
+    width: 100%;
+    }
+
+    &_parent {
+        flex-grow: 1;
+    }
+
+    &-acs {
+        height: 180px;
+        width: 100%;
+    }
+
+}
+
+.mgn-right {
+    margin-right: 30px;
+>>>>>>> Stashed changes
 }
