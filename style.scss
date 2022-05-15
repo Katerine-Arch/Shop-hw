@@ -59,19 +59,32 @@ body {
 }
 
 .top {
+    position: relative;
     background-color: $color-top;
     height: 764px;
     padding-bottom: 65px;
 
-    &_man_img {
-        background-image: url(/img/top-man.png)
+    &_img_box {
+        max-width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_img {
+        position: absolute;
         background-repeat: no-repeat;
+    }
+
+    &_man_img {
+       /*width: 50%;*/
+        height: 100%;
+        float: left;
+        padding: 10px;
         background-position: left center;
     }
 
-    &text_img {
-        background-image: url(/img/top-text.svg)
-        background-repeat: no-repeat;
+    &_text_img {
+        padding-top: 290px;
         background-position: right center;
     }
 }

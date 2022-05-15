@@ -57,15 +57,37 @@ body {
 }
 
 .top {
+  position: relative;
   background-color: #F1E4E6;
   height: 764px;
+  padding-bottom: 65px;
+}
+
+.top_img_box {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_img {
+  position: absolute;
+  background-repeat: no-repeat;
 }
 
 .top_man_img {
-  background-image: url(/img/top-man.png);
+  /*width: 50%;*/
+  height: 100%;
+  float: left;
+  padding: 10px;
+  background-position: left center;
 }
 
-.toptext_img {
-  background-image: url(/img/top-text.svg);
+.top_text_img {
+  padding-top: 290px;
+  background-position: right center;
 }
 /*# sourceMappingURL=style.css.map */
