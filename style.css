@@ -60,22 +60,6 @@ body {
   position: relative;
   background-color: #F1E4E6;
   height: 764px;
-  padding-bottom: 65px;
-}
-
-.top_img_box {
-  max-width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.top_img {
-  position: absolute;
-  background-repeat: no-repeat;
 }
 
 .top_img_box {
@@ -96,15 +80,6 @@ body {
   /*width: 50%;*/
   height: 100%;
   float: left;
-<<<<<<< Updated upstream
-  padding: 10px;
-  background-position: left center;
-}
-
-.top_text_img {
-  padding-top: 290px;
-  background-position: right center;
-=======
   background-position: left center;
 }
 
@@ -152,6 +127,5 @@ body {
 
 .mgn-right {
   margin-right: 30px;
->>>>>>> Stashed changes
 }
 /*# sourceMappingURL=style.css.map */
