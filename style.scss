@@ -3,6 +3,8 @@ $color-bg: #222222;
 $color-menu:#E8E8E8;
 $color-top: #F1E4E6;
 $color-offer: #E5E5E5;
+$color-text: #FFFFFF;
+$color-text-red: #F16D7F;
 $offer-text: uppercase; 
 
 @mixin flexible () {
@@ -12,6 +14,27 @@ $offer-text: uppercase;
 @mixin item-size () {
     width: 360px;
     height: 260px;
+}
+@mixin p-text {
+    text-transform: $offer-text;
+    color: $color-text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    top: 105px;
+    position: absolute;
+    left: 40%;
+}
+@mixin p-text-red {
+    text-transform: $offer-text;
+    color: $color-text-red;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    top: 123px;
+    position: absolute;
+    left: 33.3%;
 }
 
 * {
@@ -76,7 +99,7 @@ body {
     
     &_img_box {
         max-width: 100%;
-        @include flexible
+        @include flexible;
     }
 
     &_img {
@@ -101,16 +124,33 @@ body {
     padding-top: 65px;
     padding-bottom: 96px;
     background-color: $color-offer;
+
+    &_text {
+        @include p-text;
+    }
+
+    &_text_red {
+        @include p-text-red;
+    }
+
+    &_text_acs {
+        top: 65px;
+    }
+
+    &_text_red_acs {
+        top: 83px;
+    }
 }
 
 .parent {
-    @include flexible
+    @include flexible;
     padding-bottom: 30px;
 }
 
 .item {
-    @include item-size
-    
+    @include item-size;
+    position: relative;
+
     &_img {
     width: 100%;
     }
@@ -128,5 +168,4 @@ body {
 
 .mgn-right {
     margin-right: 30px;
-
 }
