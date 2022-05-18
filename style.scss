@@ -15,7 +15,7 @@ $offer-text: uppercase;
     width: 360px;
     height: 260px;
 }
-@mixin h1 {
+@mixin h2 {
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
@@ -188,8 +188,8 @@ body {
     background-color: $color-offer;
     min-height: 1586px;
  
-    &_h1 {
-        @include h1;
+    &_h2 {
+        @include h2;
     }
 
     .text {
