@@ -2,6 +2,8 @@ $color-bg: #222222;
 $color-menu:#E8E8E8;
 $color-top: #F1E4E6;
 $color-offer: #E5E5E5;
+$color-card: #F8F8F8;
+$color-card-text: #5D5D5D;
 $color-text: #FFFFFF;
 $color-text-red: #F16D7F;
 $offer-text: uppercase; 
@@ -93,7 +95,13 @@ $offer-text: uppercase;
     position: fixed;
     transform: scale(0);
 }
-
+@mixin catalog__text-about {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-card-text;
+    margin: 0 0 18px 0;
+}
 * {
     padding: 0;
     margin: 0;
@@ -276,27 +284,73 @@ h1 {
     }
 }
 
-.item {
-    &_img {
-    width: 100%;
-    }
-
-    &-acs {
-        height: 180px;
-        width: 100%;
-    }
-}
-
 .catalog {
     background-color: $color-offer;
-    min-height: 1586px;
- 
-    &_h2 {
+  
+    &__container {
+        @include flexible;
+    }
+
+    &__card {
+        list-style: none;
+    }
+
+    &__h2 {
         @include h2;
     }
 
-    .text {
+    &__info {
         @include text;
+        line-height: 36px;
+        margin-bottom: 48px;
     }
 
+    &__card-text {
+        height: 581px;
+        width: 360px;
+        background-color: $color-card;
+        margin: 0 30px 30px 0;
+    }
+
+    h3 {
+        padding: 0 0 0 18px;
+    }
+
+    &__text {
+        padding: 0 0 0 18px;
+    }
+
+    &__text-margin {
+        margin: 25px 0 12.65px 0;
+    }
+
+    &__text-about{
+        @include catalog__text-about;
+    }
+
+    &__price {
+        color: $color-text-red;
+    }
+
+    &__margin-last {
+        margin: 0 0 30px 0;
+    }
+
+    &__button-product {
+        position: relative;
+        left: 43%;
+        margin: 48.5px 0 95.5px 0;
+        width: 211px;
+        height: 47px;
+        color: $color-text-red;
+        font-size: 16px;
+        line-height: 19px;
+        border: solid #F16D7F 1px;
+    }
+
+    &__button-decor {
+        text-decoration: none;
+        color: $color-text-red;
+    }
+    
 }
