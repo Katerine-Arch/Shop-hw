@@ -12,108 +12,116 @@
     <script type="text/javascript">
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
     <title>MyShop</title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="header_menu">
-            <div class="container header__menu">
-                <img src="img/logo.svg" alt="logo" width="44" height="38">
-                <img src="img/loup.svg" alt="loup" width="26" height="26">
-                <button>menu-img</button>
-                <a href="#">person-img</a>
-                <a href="#">card-img</a>
-                <!--<ul class="header_menu_list hml-left">
-                    <li class="hml-icon-left">Круг</li>
-                    <li class="hml-icon-left">Лупа</li>
-                </ul>
-                <ul class="header_menu_list hml-right">
-                    <li class="hml-icon-right">Полосочки</li>
-                    <li class="hml-icon-right">Лич Кабинет</li>
-                    <li class="hml-icon-right">Корзина</li>
-                </ul>-->
-                <nav>
-                    menu
-                    <ul>
-                        <li>
-                            <h2>man</h2>
-                            <ul>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2>woman</h2>
-                            <ul>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2>kids</h2>
-                            <ul>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </li>
+    <header class="header">
+        <div class="header__menu">
+            <div class="container header___menu">
+                <div class="header__controls">
+                    <img src="img/logo.svg" alt="logo" width="44" height="38" class="header__logo header__margin-logo">
+                    <img src="img/loup.svg" alt="loup" width="26" height="27" class="header__icon">
+                </div>
+                <div class="header__controls">
+                    <button class="header__button">
+                        <img src="img/menu.svg" alt="menu" width="32" height="23" class="header__icon header__margin">
+                    </button>
+                    <a href="#"><img src="img/person.svg" alt="person" width="29" height="29"
+                            class="header__icon header__margin"></a>
+                    <a href="#"><img src="img/card.svg" alt="card" width="32" height="29" class="header__icon"></a>
+                    <!--<ul class="header_menu_list hml-left">
+                        <li class="hml-icon-left">Круг</li>
+                        <li class="hml-icon-left">Лупа</li>
                     </ul>
-                </nav>
-
+                    <ul class="header_menu_list hml-right">
+                        <li class="hml-icon-right">Полосочки</li>
+                        <li class="hml-icon-right">Лич Кабинет</li>
+                        <li class="hml-icon-right">Корзина</li>
+                    </ul>-->
+                </div>
             </div>
         </div>
-    </div>
+
+        <nav class="header_navigation">
+            menu
+            <ul>
+                <li>
+                    <h2>man</h2>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>woman</h2>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>kids</h2>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
     <main>
-        <section>
-            <div class="top">
-                <div class="container top_img_box">
-                    <div class="top_img">
-                        <img class="top_man_img" src="img/top-man.png" alt="Man">
-                    </div>
-                    <div class="top_img">
-                        <img class="top_text_img" src="img/top-text.svg" alt="Text">
-                    </div>
+        <section class="top">
+            <div class="container top_img_box">
+                <div class="top_img">
+                    <img class="top_man_img" src="img/top-man.png" alt="Man" width="800" height="765">
+                </div>
+                <div class="top_img">
+                    <h1 class="top__brand-title">THE BRAND
+                        <span class="top__brand-subtitle">OF LUXERIOUS
+                            <span class="top__brand-subtitle--pink">FASHION
+                            </span>
+                        </span>
+                    </h1>
                 </div>
             </div>
         </section>
 
-        <!-- отредактировать расположение текста -->
-        <section>
-            <div class="offer">
-                <ul class="parent container">
-                    <li class="item item_parent mgn-right">
-                        <img class="item_img" src="img/women.jpg" alt="Women">
-                        <p class="offer_text">30% OFF</p>
-                        <p class="offer_text_red">FOR WOMEN</p>
-                    </li>
-                    <li class="item item_parent mgn-right">
-                        <img class="item_img" src="img/Man.jpg" alt="Men">
-                        <p class="offer_text">hot deal</p>
-                        <p class="offer_text_red">for men</p>
-                    </li>
-                    <li class="item item_parent">
-                        <img class="item_img" src="img/Kids.jpg" alt="Kids">
-                        <p class="offer_text">new arrivals</p>
-                        <p class="offer_text_red">for kids</p>
-                    </li>
-                </ul>
-
-                <ul class="item item-acs container">
-                    <li img class="img" src="img/Acs.jpg" alt="Acs">
-                        <p class="offer_text offer_text_acs">LUXIROUS & TRENDY</p>
-                        <p class="offer_text_red offer_text_red_acs">ACCESORIES</p>
-                    </li>
-                </ul>
-            </div>
+        <section class="offer">
+            <h2 class="visually-hidden">offers</h2>
+            <ul class="offer__list container">
+                <li class="offer__item offer__item-woman">
+                    <h3>30% OFF</h3>
+                    <p class="offer_text-red">FOR WOMEN</p>
+                </li>
+                <li class="offer__item offer__item-man">
+                    <h3>hot deal</h3>
+                    <p class="offer_text-red">for men</p>
+                </li>
+                <li class="offer__item offer__item-kids">
+                    <h3>new arrivals</h3>
+                    <p class="offer_text-red">for kids</p>
+                </li>
+                <li class="offer__item offer__item-acs">
+                    <h3>LUXIROUS & TRENDY</h3>
+                    <p class="offer_text-red">ACCESORIES</p>
+                </li>
+            </ul>
         </section>
 
         <section>
