@@ -100,12 +100,34 @@ $offer-text: uppercase;
     color: #9F9F9F;
     text-align: center;
 }
+@mixin footer__about-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-bg-footer;
+    text-align: center;
+}
 @mixin text-footer {
     font-weight: 300;
     font-size: 13.972px;
     line-height: 17px;
     text-align: center;
     color: $color-text-footer;
+}
+@mixin footer__sub-text-bold {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    color: $color-bg-footer;
+    font-weight: bold;
+    text-transform: $offer-text;
+}
+@mixin footer__subscrybe-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.1px;
+    text-transform: $offer-text;
+    text-align: center;
 }
 @mixin v-h {
     position: fixed;
@@ -434,12 +456,29 @@ h1 {
     }
 
     &__about-text {
-        text-align: center;
         width: 360px;
+        @include footer__about-text;
     }
 
     &__subscrybe {
         width: 557px;
     }
+
+    &__copy {
+        background-color: $color-bg-footer;
+        height: 79px;
+    }
+
+    &__subscrybe-text {
+        text-transform: $offer-text;
+    }
+
+    &__subscrybe-text {
+        @include footer__subscrybe-text;
+    }
+    
+    &__sub-text-bold {
+        @include footer__sub-text-bold;
+    }  
 
 }
