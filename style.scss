@@ -481,4 +481,36 @@ h1 {
         @include footer__sub-text-bold;
     }  
 
+    &__subscrybe {
+        text-align: center;
+        padding-top: 32px;
+    }
+
+    &__input {
+        background-color: $color-offer;
+        width: 234px;
+        height: 49px;
+        padding-left: 22px;
+    }
+
+    &__subscrybe-button {
+        background-color: $color-text-red;
+        width: 100px;
+        height: 49px;
+    }
+
+    &__copy {
+        display: flex;
+    }
+
+    &__copy-text {
+        display: flex;
+    }
+
+    &__icon {
+        display: flex;
+    }
+
+
+
 }
