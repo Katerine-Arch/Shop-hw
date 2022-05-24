@@ -504,7 +504,7 @@ h1 {
 .footer__input {
   background-color: #E5E5E5;
   width: 234px;
-  height: 49px;
+  height: 45px;
   padding-left: 22px;
 }
 
@@ -530,5 +530,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
