@@ -392,6 +392,10 @@ h1 {
     }
 }
 
+.form {
+    display: flex;
+    }
+    
 .footer {
    &__top {
        height: 341px;
@@ -430,6 +434,10 @@ h1 {
 
     &__text {
         @include text-footer();
+    }
+
+    &__bottom {
+        
     }
 
     &__bottom-info {

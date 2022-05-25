@@ -470,6 +470,12 @@ h1 {
   width: 557px;
 }
 
+.footer .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__copy {
   background-color: #222224;
   height: 79px;
