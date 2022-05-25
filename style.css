@@ -359,6 +359,25 @@ h1 {
   color: #F16D7F;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .footer__top {
   height: 341px;
   background-color: #222224;
@@ -422,6 +441,12 @@ h1 {
   color: #FBFBFB;
 }
 
+.footer__bottom {
+  /*display: flex;
+        justify-content: space-between;
+        padding: 30px 0;*/
+}
+
 .footer__bottom-info {
   background-image: url(img/footer-bg.jpg);
   width: 100%;
@@ -470,12 +495,6 @@ h1 {
   width: 557px;
 }
 
-.footer .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer__copy {
   background-color: #222224;
   height: 79px;
@@ -512,18 +531,19 @@ h1 {
   width: 234px;
   height: 45px;
   padding-left: 22px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: none;
 }
 
 .footer__subscrybe-button {
   background-color: #F16D7F;
+  color: #FFFFFF;
   width: 100px;
-  height: 49px;
-}
-
-.footer__copy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 45px;
+  border: none;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .footer__copy-text {

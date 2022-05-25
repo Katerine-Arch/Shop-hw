@@ -392,11 +392,15 @@ h1 {
     }
 }
 
-.form {
+form {
     display: flex;
+    justify-content: center;
     }
-    
+
 .footer {
+    display: flex;
+    flex-direction: column;
+
    &__top {
        height: 341px;
        background-color: $color-bg-footer;
@@ -437,7 +441,9 @@ h1 {
     }
 
     &__bottom {
-        
+        /*display: flex;
+        justify-content: space-between;
+        padding: 30px 0;*/
     }
 
     &__bottom-info {
@@ -499,16 +505,19 @@ h1 {
         width: 234px;
         height: 45px;
         padding-left: 22px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border: none;
     }
 
     &__subscrybe-button {
         background-color: $color-text-red;
+        color: $color-text;
         width: 100px;
-        height: 49px;
-    }
-
-    &__copy {
-        display: flex;
+        height: 45px;
+        border: none;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
     &__copy-text {
