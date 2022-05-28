@@ -88,8 +88,22 @@ h1 {
   border: none;
 }
 
-.header_navigation {
+.header__navigation {
   display: none;
+}
+
+.header__info {
+  height: 148px;
+  background-color: #F8F3F4;
+}
+
+.header__info-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #F16D7F;
+  padding: 59px 0 0 0;
 }
 
 .top {
@@ -368,6 +382,11 @@ form {
           justify-content: center;
 }
 
+.registration {
+  padding: 64px 0 96px 0;
+  min-height: 167px;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,22 +461,31 @@ form {
 }
 
 .footer__bottom {
-  /*display: flex;
-        justify-content: space-between;
-        padding: 30px 0;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
 }
 
 .footer__bottom-info {
   background-image: url(img/footer-bg.jpg);
+  background-color: #f4f4f4;
   width: 100%;
   height: 448px;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .footer__about {
@@ -493,11 +521,17 @@ form {
 
 .footer__subscrybe {
   width: 557px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .footer__copy {
   background-color: #222224;
   height: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__subscrybe-text {

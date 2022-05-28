@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
 
     <link href="style.css" rel="stylesheet">
 
@@ -14,9 +14,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <title>MyShop</title>
+    <title>myshop</title>
 </head>
 
 <body>
@@ -24,21 +24,24 @@
         <div class="header__menu">
             <div class="container header___menu">
                 <div class="header__controls">
-                    <img src="img/logo.svg" alt="logo" width="44" height="38" class="header__logo header__margin-logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="logo" width="44" height="38"
+                            class="header__logo header__margin-logo">
+                    </a>
                     <img src="img/loup.svg" alt="loup" width="26" height="27" class="header__icon">
                 </div>
                 <div class="header__controls">
                     <button class="header__button">
                         <img src="img/menu.svg" alt="menu" width="32" height="23" class="header__icon header__margin">
                     </button>
-                    <a href="#"><img src="img/person.svg" alt="person" width="29" height="29"
+                    <a href="registration.html"><img src="img/person.svg" alt="person" width="29" height="29"
                             class="header__icon header__margin"></a>
                     <a href="#"><img src="img/card.svg" alt="card" width="32" height="29" class="header__icon"></a>
                 </div>
             </div>
         </div>
 
-        <nav class="header_navigation">
+        <nav class="header__navigation">
             menu
             <ul>
                 <li>
@@ -73,68 +76,76 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="header__info">
+            <p class="header__info-text container">
+                registration
+            </p>
+
         </div>
     </header>
 
+    <section class="registration container">
 
-</body>
+    </section>
 
-<section class="footer__bottom">
-    <div class="footer__bottom-info">
-        <div class="footer__about container">
-            <img src="img/footer-foto.svg" alt="round-foto" width="96" height="96" class="footer__about-img">
-            <p class="footer__about-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                <span class="footer__about-coursive">
-                    a pulvinar purus condimentum“
-                </span>
-            </p>
-        </div>
-
-        <div class="footer__subscrybe container">
-            <p class="footer__subscrybe-text">
-                <span class="footer__sub-text-bold">
-                    SUBSCRIBE <br>
-                </span>
-                FOR OUR NEWLETTER AND PROMOTION
-            </p>
-            <div class="footer__subscrybe">
-                <form action="" method="post">
-                    <input class="footer__input" type="email" placeholder="Enter Your Email" required>
-
-                    <button type="submit" class="footer__subscrybe-button">
-                        Subscribe
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <section class="footer__copy">
-        <div class="footer__bottom container">
-            <div class="footer__copy-text">
-                <p class="footer__ct">
-                    © 2021 Brand All Rights Reserved.
+    <section class="footer__bottom">
+        <div class="footer__bottom-info">
+            <div class="footer__about container">
+                <img src="img/footer-foto.svg" alt="round-foto" width="96" height="96" class="footer__about-img">
+                <p class="footer__about-text">“vestibulum quis porttitor dui! quisque viverra nunc mi,
+                    <span class="footer__about-coursive">
+                        a pulvinar purus condimentum“
+                    </span>
                 </p>
             </div>
 
-            <div class="footer__icons-all">
-                <ul class="footer__icon">
-                    <li class="footer__icon-f">
-                        <img src="img/icon-f.png" alt="telegramm">
-                    </li>
-                    <li class="footer__icon-ig>
-                    <img src=" img/icon-ig.png" alt=" VK">
-                    </li>
-                    <li class="footer__icon-pin>
-                    <img src=" img/icon-pin.png" alt="mail-news">
-                    </li>
-                    <li class="footer__icon-tw">
-                        <img src="img/icon-tw.png" alt="telegramm">
-                    </li>
-                </ul>
+            <div class="footer__subscrybe container">
+                <p class="footer__subscrybe-text">
+                    <span class="footer__sub-text-bold">
+                        subscribe <br>
+                    </span>
+                    for our newletter and promotion
+                </p>
+                <div class="footer__subscrybe">
+                    <form action="" method="post">
+                        <input class="footer__input" type="email" placeholder="enter your email" required>
+
+                        <button type="submit" class="footer__subscrybe-button">
+                            subscribe
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
+
+        <section class="footer__copy">
+            <div class="footer__bottom container">
+                <div class="footer__copy-text">
+                    <p class="footer__ct">
+                        © 2021 brand all rights reserved.
+                    </p>
+                </div>
+
+                <div class="footer__icons-all">
+                    <ul class="footer__icon">
+                        <li class="footer__icon-f">
+                            <img src="img/icon-f.png" alt="telegramm">
+                        </li>
+                        <li class="footer__icon-ig>
+                    <img src=" img/icon-ig.png" alt=" vk">
+                        </li>
+                        <li class="footer__icon-pin>
+                    <img src=" img/icon-pin.png" alt="mail-news">
+                        </li>
+                        <li class="footer__icon-tw">
+                            <img src="img/icon-tw.png" alt="telegramm">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </section>
-</section>
+</body>
 
 </html>
