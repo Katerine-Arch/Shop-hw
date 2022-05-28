@@ -448,6 +448,19 @@ form {
         display: flex;
     }
 
+    &__radio-input {
+        display: none;
+    }
+
+    &__radio-label {
+        margin: 0 0 0 27px;
+        position: relative;
+    }
+
+    &__radio-label::before{
+        
+    }
+
     &__info {
         width: 50%;
     }

@@ -422,6 +422,15 @@ form {
   display: flex;
 }
 
+.registration__radio-input {
+  display: none;
+}
+
+.registration__radio-label {
+  margin: 0 0 0 27px;
+  position: relative;
+}
+
 .registration__info {
   width: 50%;
 }
