@@ -109,6 +109,11 @@ $offer-text: uppercase;
     color: #9F9F9F;
     text-align: center;
 }
+@mixin registration-text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
 @mixin footer__about-text {
     font-weight: 400;
     font-size: 20px;
@@ -419,6 +424,23 @@ form {
 .registration {
     padding: 64px 0 96px 0;
     min-height: 167px;
+    @include flexible;
+
+    &__form {
+        width: 50%;
+    }
+
+    &__info {
+        width: 50%;
+    }
+
+    &__info-text {
+        @include registration-text();
+    }
+
+    &__info-header {
+    text-transform: $offer-text;
+    }
 }
 
 .footer {

@@ -385,6 +385,30 @@ form {
 .registration {
   padding: 64px 0 96px 0;
   min-height: 167px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration__form {
+  width: 50%;
+}
+
+.registration__info {
+  width: 50%;
+}
+
+.registration__info-text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.registration__info-header {
+  text-transform: uppercase;
 }
 
 .footer {
