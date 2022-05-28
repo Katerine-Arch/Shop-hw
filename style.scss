@@ -428,6 +428,24 @@ form {
 
     &__form {
         width: 50%;
+        flex-direction: column;
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    &__label,
+    &__input {
+        display: block;
+    }
+
+    &__label {
+        flex-direction: column;
+    }
+
+    &__form-d {
+        display: flex;
     }
 
     &__info {

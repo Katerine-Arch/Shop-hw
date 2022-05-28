@@ -395,6 +395,31 @@ form {
 
 .registration__form {
   width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration fieldset {
+  border: none;
+}
+
+.registration__label, .registration__input {
+  display: block;
+}
+
+.registration__label {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration__form-d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .registration__info {

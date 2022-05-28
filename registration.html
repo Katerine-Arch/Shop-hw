@@ -87,10 +87,36 @@
 
     <section class="registration container">
 
-        <div class="registration__form">
-            <p>
-                тут будет таблица со строчками ввода текста
-            </p>
+        <div>
+            <form class="registration__form" action="" method="post">
+                <fieldset>
+                    <legend>Your Name</legend>
+                    <label class="registration__label registration__form-d" for="username">
+
+                        <input class="registration__input" type="text" id="firstname">
+                        <input class="registration__input" type="text" id="lastname">
+                    </label>
+                    <div class="registration__radio">
+                        <input type="radio" id="man" name="sex" value="Man">
+                        <label for="man">Man</label>
+                        <input type="radio" id="woman" name="sex" value="Woman" checked>
+                        <label for="woman">Woman</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Login details</legend>
+                    <label class="registration__label registration__form-d" for="username">
+
+                        <input class="registration__input" type="text" id="Email">
+                        <input class="registration__input" type="text" id="Password">
+                    </label>
+                </fieldset>
+                <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    letters</p>
+                <button type="submit">
+                    join now
+                    <button>
+            </form>
         </div>
 
         <div class="registration__info">
