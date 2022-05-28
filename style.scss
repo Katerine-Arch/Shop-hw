@@ -436,11 +436,29 @@ form {
 
     &__info-text {
         @include registration-text();
+        margin: 0;
+        padding: 0;
     }
 
     &__info-header {
     text-transform: $offer-text;
     }
+    
+    &__item {
+        list-style: none;
+        margin: 0 0 16px 30px;
+        position: relative;
+    }
+
+    &__item::before {
+        content: " ";
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        background-image: url(img/check.png);
+        left: -26px;
+    }
+
 }
 
 .footer {

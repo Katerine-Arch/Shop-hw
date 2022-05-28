@@ -405,10 +405,27 @@ form {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  margin: 0;
+  padding: 0;
 }
 
 .registration__info-header {
   text-transform: uppercase;
+}
+
+.registration__item {
+  list-style: none;
+  margin: 0 0 16px 30px;
+  position: relative;
+}
+
+.registration__item::before {
+  content: " ";
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  background-image: url(img/check.png);
+  left: -26px;
 }
 
 .footer {
