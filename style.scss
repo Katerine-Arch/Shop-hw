@@ -114,6 +114,12 @@ $offer-text: uppercase;
     font-size: 24px;
     line-height: 29px;
 }
+@mixin registration-form {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-bg;
+}
 @mixin footer__about-text {
     font-weight: 400;
     font-size: 20px;
@@ -426,6 +432,11 @@ form {
     min-height: 167px;
     @include flexible;
 
+    &__legend {
+        @include registration-form;
+        padding: 0 0 20.5px 0;
+    }
+
     &__form {
         width: 50%;
         flex-direction: column;
@@ -452,10 +463,6 @@ form {
         display: none;
     }
 
-    &__radio-input:checked + &__radio-label:before {
-        background-image: url(img/check.png);
-    }
-
     &__radio-label {
         margin: 0 0 0 27px;
         position: relative;
@@ -469,6 +476,10 @@ form {
         border: 1px solid #A4A4A4;
         border-radius: 50%;
         left: -27px;
+    }
+
+    &__radio-input:checked + &__radio-label:before {
+        background-image: url(img/check.png);
     }
 
     &__info {
