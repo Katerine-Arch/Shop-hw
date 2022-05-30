@@ -426,9 +426,23 @@ form {
   display: none;
 }
 
+.registration__radio-input:checked + .registration__radio-label:before {
+  background-image: url(img/check.png);
+}
+
 .registration__radio-label {
   margin: 0 0 0 27px;
   position: relative;
+}
+
+.registration__radio-label::before {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 1px solid #A4A4A4;
+  border-radius: 50%;
+  left: -27px;
 }
 
 .registration__info {

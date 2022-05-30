@@ -452,13 +452,23 @@ form {
         display: none;
     }
 
+    &__radio-input:checked + &__radio-label:before {
+        background-image: url(img/check.png);
+    }
+
     &__radio-label {
         margin: 0 0 0 27px;
         position: relative;
     }
 
     &__radio-label::before{
-        
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 17px;
+        border: 1px solid #A4A4A4;
+        border-radius: 50%;
+        left: -27px;
     }
 
     &__info {
