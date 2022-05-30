@@ -6,6 +6,8 @@ $color-top-menu: #F8F3F4;
 $color-offer: #E5E5E5;
 $color-card: #F8F8F8;
 $color-card-text: #5D5D5D;
+$color-border-reg: #A4A4A4;
+$color-reg-text: #B1B1B1;
 $color-text: #FFFFFF;
 $color-text-footer: #FBFBFB;
 $color-text-red: #F16D7F;
@@ -48,6 +50,7 @@ $offer-text: uppercase;
     line-height: 36px;
     color: #222222;
     text-align: center;
+    text-transform: $offer-text;
 }
 @mixin h3 {
     font-weight: 400;
@@ -120,6 +123,14 @@ $offer-text: uppercase;
     line-height: 19px;
     color: $color-bg;
 }
+@mixin registration-text-info {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $color-reg-text;
+    width: 359px;
+    margin: 0 0 39px 0;
+}
 @mixin footer__about-text {
     font-weight: 400;
     font-size: 20px;
@@ -148,6 +159,13 @@ $offer-text: uppercase;
     line-height: 30.1px;
     text-transform: $offer-text;
     text-align: center;
+}
+@mixin footer_ct {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
 }
 @mixin v-h {
     position: fixed;
@@ -445,10 +463,29 @@ form {
     fieldset {
         border: none;
     }
+    
+    &__padding-bottom1 {
+        padding-bottom: 35px;
+    }
+
+    &__padding-bottom2 {
+        padding-bottom: 5px;
+    }
 
     &__label,
     &__input {
         display: block;
+    }
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        margin-bottom: 20px;
+        border-color: $color-border-reg;
+    }
+
+    &__input-margin {
+        margin-bottom: 31px;
     }
 
     &__label {
@@ -466,6 +503,7 @@ form {
     &__radio-label {
         margin: 0 0 0 27px;
         position: relative;
+        margin-right: 20px;
     }
 
     &__radio-label::before{
@@ -511,6 +549,28 @@ form {
         left: -26px;
     }
 
+    &__text-info {
+        @include registration-text-info;
+    }
+    
+    &__button {
+        width: 167px;
+        padding: 16px 66px 17px 29px;
+        background-color: $color-text-red;
+        border: none;
+        text-transform: $offer-text;
+        color: $color-text;
+        position: relative;
+    }
+
+    &__button::before {
+        content: " ";
+        width: 17px;
+        height: 10px;
+        position: absolute;
+        background-image: url(img/reg-button.png);
+        right: 20px;
+    }
 }
 
 .footer {
@@ -557,9 +617,11 @@ form {
     }
 
     &__bottom {
-        display: flex;
-        flex-direction: column;
+        //flex-direction: column;
         min-height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
     }
 
     &__bottom-info {
@@ -571,6 +633,7 @@ form {
         align-items: center;
         display: flex;
         flex: 1 0 auto;
+        position: absolute;
     }
 
     &__about {
@@ -602,6 +665,11 @@ form {
         background-color: $color-bg-footer;
         height: 79px;
         display: flex;
+        justify-content: space-between;
+        //width: 1140px;
+        position: relative;
+        top: 440px;
+        width: 100%;
     }
 
     &__subscrybe-text {
@@ -629,6 +697,7 @@ form {
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         border: none;
+        
     }
 
     &__subscrybe-button {
@@ -648,6 +717,12 @@ form {
     &__icon {
         display: flex;
         list-style: none;
+        padding-top: 30px;
+        margin-right: 7.5px;
+    }
+
+    &__ct{
+        @include footer_ct;
     }
 
 

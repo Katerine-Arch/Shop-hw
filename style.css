@@ -309,6 +309,7 @@ h1 {
   line-height: 36px;
   color: #222222;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .catalog__info {
@@ -413,8 +414,27 @@ form {
   border: none;
 }
 
+.registration__padding-bottom1 {
+  padding-bottom: 35px;
+}
+
+.registration__padding-bottom2 {
+  padding-bottom: 5px;
+}
+
 .registration__label, .registration__input {
   display: block;
+}
+
+.registration__input {
+  width: 360px;
+  height: 45px;
+  margin-bottom: 20px;
+  border-color: #A4A4A4;
+}
+
+.registration__input-margin {
+  margin-bottom: 31px;
 }
 
 .registration__label {
@@ -437,6 +457,7 @@ form {
 .registration__radio-label {
   margin: 0 0 0 27px;
   position: relative;
+  margin-right: 20px;
 }
 
 .registration__radio-label::before {
@@ -482,6 +503,34 @@ form {
   position: absolute;
   background-image: url(img/check.png);
   left: -26px;
+}
+
+.registration__text-info {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  width: 359px;
+  margin: 0 0 39px 0;
+}
+
+.registration__button {
+  width: 167px;
+  padding: 16px 66px 17px 29px;
+  background-color: #F16D7F;
+  border: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.registration__button::before {
+  content: " ";
+  width: 17px;
+  height: 10px;
+  position: absolute;
+  background-image: url(img/reg-button.png);
+  right: 20px;
 }
 
 .footer {
@@ -558,14 +607,14 @@ form {
 }
 
 .footer__bottom {
+  min-height: 100%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100%;
 }
 
 .footer__bottom-info {
@@ -583,6 +632,7 @@ form {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  position: absolute;
 }
 
 .footer__about {
@@ -629,6 +679,12 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 440px;
+  width: 100%;
 }
 
 .footer__subscrybe-text {
@@ -688,5 +744,15 @@ form {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding-top: 30px;
+  margin-right: 7.5px;
+}
+
+.footer__ct {
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
 }
 /*# sourceMappingURL=style.css.map */
