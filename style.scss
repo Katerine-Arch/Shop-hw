@@ -233,6 +233,10 @@ h1 {
          
     }
 
+    &__icon-nav:hover {
+         opacity: 0.5;
+    }
+
     &__button {
         @include icon;
     }
@@ -505,14 +509,19 @@ form {
     }
 
     &__input {
-        width: 360px;
+        width: 342px;
         height: 45px;
         margin-bottom: 20px;
         border-color: $color-border-reg;
     }
 
     &__input-margin {
-        margin-bottom: 31px;
+        margin-bottom: 31px;  
+    }
+
+    &__input-padding {
+        padding-left: 18px;
+        color: $color-reg-text;
     }
 
     &__label {
