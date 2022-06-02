@@ -27,30 +27,6 @@ h1 {
 
 .header {
   background-color: #222222;
-  /*&_menu_list {
-        color: $color-menu;
-        list-style-type: none;
-        display: flex;
-    }
-    
-    .hml-left {
-        position: left;
-    }
-    .hml-right {
-        position: right;
-    }
-
-    .hml-icon-left {
-        padding-right: 41px;
-    }
-
-    .hml-icon-left:first-child {
-        padding-left: 231px;
-    }
-
-    .hml-icon-right {
-        padding-right: 33px;
-    }*/
 }
 
 .header__menu {
@@ -81,6 +57,11 @@ h1 {
 
 .header__icon {
   padding-top: 30px;
+}
+
+.header__icon-nav:hover, .header__icon-nav:focus {
+  cursor: pointer;
+  fill: #F16D7F;
 }
 
 .header__button {
@@ -369,9 +350,32 @@ h1 {
   border: solid #F16D7F 1px;
 }
 
+.catalog__button-product:hover .catalog__button-decor,
+.catalog__button-product:focus .catalog__button-decor {
+  background-color: #F16D7F;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.5;
+}
+
+.catalog__button-product:active .catalog__button-decor {
+  opacity: 0.7;
+}
+
 .catalog__button-decor {
   text-decoration: none;
   color: #F16D7F;
+}
+
+.catalog__button-decor:hover, .catalog__button-decor:focus {
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.5;
+}
+
+.catalog__button-decor:active {
+  opacity: 0.7;
 }
 
 form {
@@ -427,7 +431,7 @@ form {
 }
 
 .registration__input {
-  width: 360px;
+  width: 342px;
   height: 45px;
   margin-bottom: 20px;
   border-color: #A4A4A4;
@@ -435,6 +439,11 @@ form {
 
 .registration__input-margin {
   margin-bottom: 31px;
+}
+
+.registration__input-padding {
+  padding-left: 18px;
+  color: #B1B1B1;
 }
 
 .registration__label {
@@ -503,6 +512,7 @@ form {
   position: absolute;
   background-image: url(img/check.png);
   left: -26px;
+  top: 10px;
 }
 
 .registration__text-info {
