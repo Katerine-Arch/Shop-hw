@@ -423,15 +423,20 @@ h1 {
         border: solid #F16D7F 1px;
     }
 
-    &__button-product:hover .catalog__button-decor,
-    &__button-product:focus .catalog__button-decor {
+    &__button-product:hover,
+    &__button-decor:hover,
+    &__button-product:focus,
+    &__button-decor:focus 
+        {
         background-color: $color-text-red;
         cursor: pointer;
         outline: none;
-        opacity: 0.5;
+        opacity: 0.7;
     }
 
-    &__button-product:active .catalog__button-decor {
+    &__button-product:active, 
+    &__button-decor:active 
+        {
         opacity: 0.7;
     }
 
