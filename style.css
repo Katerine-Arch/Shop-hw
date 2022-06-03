@@ -280,10 +280,6 @@ h1 {
           justify-content: space-between;
 }
 
-.catalog__card {
-  list-style: none;
-}
-
 .catalog__h2 {
   font-weight: 400;
   font-size: 30px;
@@ -303,15 +299,51 @@ h1 {
   margin-bottom: 48px;
 }
 
+.catalog__card {
+  list-style: none;
+}
+
 .catalog__card-text {
-  height: 581px;
+  min-height: 581px;
   width: 360px;
   background-color: #F8F8F8;
   margin: 0 30px 30px 0;
 }
 
+.catalog__card-text:hover, .catalog__wrapper-overlay::before {
+  display: block;
+}
+
+.catalog__wrapper-overlay {
+  position: relative;
+}
+
+.catalog__wrapper-overlay::before {
+  content: '';
+  width: 100%;
+  min-height: 420px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.catalog__img {
+  min-width: 360px;
+  min-height: 420px;
+}
+
+.catalog__wrapper-button {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .catalog h3 {
   padding: 0 0 0 18px;
+  text-transform: uppercase;
 }
 
 .catalog__text {
