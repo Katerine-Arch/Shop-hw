@@ -269,29 +269,6 @@ h1 {
 
 .catalog {
   background-color: #E5E5E5;
-  /*
-    &__card-text:hover 
-    &__wrapper-overlay::before,
-    &__wrapper-button
-     {
-        display: block;
-    }
-
-    &__wrapper-overlay::before {
-        content: '';
-        width: 100%;
-        min-height: 420px;
-        background: rgba(0, 0, 0, 0.2);
-        position: absolute;
-        top: 0;
-        display: none;
-    }
-        
-    &__wrapper-overlay::before,
-    &__wrapper-button {
-        display: none;
-    }
-*/
 }
 
 .catalog__container {
@@ -354,6 +331,12 @@ h1 {
   border: 1px solid #FFFFFF;
 }
 
+.catalog__button-style {
+  text-decoration: none;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
 .catalog__wrapper-button::before {
   content: " ";
   width: 26px;
@@ -366,6 +349,27 @@ h1 {
 
 .catalog__wrapper-overlay {
   position: relative;
+}
+
+.catalog__wrapper-overlay::before {
+  content: '';
+  width: 100%;
+  min-height: 420px;
+  background: rgba(0, 0, 0, 0.46);
+  position: absolute;
+  top: 0;
+}
+
+.catalog__wrapper-overlay::before, .catalog__wrapper-button {
+  display: none;
+}
+
+.catalog__card-text:hover .catalog__wrapper-overlay::before {
+  display: block;
+}
+
+.catalog__card-text:hover .catalog__wrapper-button {
+  display: block;
 }
 
 .catalog h3 {

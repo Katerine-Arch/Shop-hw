@@ -408,6 +408,12 @@ h1 {
         //position: relative;
     }
 
+    &__button-style {
+        text-decoration: none;
+        color: $color-text;
+        z-index: 1; 
+    }
+
     &__wrapper-button::before {
         content: " ";
         width: 26px;
@@ -418,33 +424,36 @@ h1 {
         top: 10px;
     }
 
-
     &__wrapper-overlay {
         position: relative;
-    }
- /*
-    &__card-text:hover 
-    &__wrapper-overlay::before,
-    &__wrapper-button
-     {
-        display: block;
     }
 
     &__wrapper-overlay::before {
         content: '';
         width: 100%;
         min-height: 420px;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.46);
         position: absolute;
         top: 0;
-        display: none;
+        //display: none;
     }
-        
+
     &__wrapper-overlay::before,
     &__wrapper-button {
         display: none;
     }
-*/
+
+    &__card-text:hover  
+    &__wrapper-overlay::before {
+        display: block;
+    }
+
+    &__card-text:hover
+    &__wrapper-button {
+        display: block;
+    }
+
+
     h3 {
         padding: 0 0 0 18px;
         text-transform: $offer-text;
