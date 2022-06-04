@@ -248,8 +248,51 @@ h1 {
         @include icon;
     }
 
+    &__menu-nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    min-height: 23px;
+    }
+
+    &__nav-button {
+
+    }
+
     &__navigation {
-        display: none;
+    position: absolute;
+    width: 232px;
+    top: 100%;
+    right: 0;
+    background: white;
+    display: block;
+    }
+
+    .display-block {
+    display: block;
+    z-index: 1;
+    }
+
+    &__text {
+    @include h2;
+    font-size: 17px;
+    color: $color-bg;
+    text-align: left;
+    text-transform: $offer-text;
+    }
+
+    &__menu-list {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    &__menu-link {
+        text-decoration: none;
+    }
+    
+    &__menu-link:hover {
+    color: $color-text-red;
+    cursor: pointer;
     }
 
     &__info {
