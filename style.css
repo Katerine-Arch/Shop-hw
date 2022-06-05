@@ -67,6 +67,7 @@ h1 {
 .header__button {
   background-color: transparent;
   border: none;
+  position: relative;
 }
 
 .header__menu-nav {
@@ -76,8 +77,11 @@ h1 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
   min-height: 23px;
+}
+
+.header__nav-button {
+  display: none;
 }
 
 .header__navigation {
@@ -87,6 +91,7 @@ h1 {
   right: 0;
   background: white;
   display: block;
+  min-height: 764px;
 }
 
 .header .display-block {
@@ -105,7 +110,12 @@ h1 {
   color: #222222;
   text-align: left;
   text-transform: uppercase;
-  padding: 37px 143px 24px 34px;
+  padding: 37px 143px 4px 34px;
+  font-weight: bold;
+}
+
+.header__link {
+  list-style: none;
 }
 
 .header__menu-list {
@@ -113,8 +123,22 @@ h1 {
   list-style-type: none;
 }
 
+.header__text-h2 {
+  text-transform: uppercase;
+  color: #F16D7F;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px 144px 12px 53px;
+}
+
 .header__menu-link {
   text-decoration: none;
+  color: #6F6E6E;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0 0 11px 64px;
 }
 
 .header__menu-link:hover {
@@ -137,7 +161,6 @@ h1 {
 }
 
 .top {
-  position: relative;
   background-color: #F1E4E6;
   height: 764px;
 }
@@ -176,7 +199,6 @@ h1 {
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
-  padding-left: 91px;
 }
 
 .top__brand-subtitle {

@@ -48,7 +48,7 @@
                     </svg>
                 </div>
                 <div class="header__controls">
-                    <button class="header__button">
+                    <button class="header__button" id="header__nav-button">
                         <svg class="header__icon header__icon-nav header__margin " width="32" height="23"
                             viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg" fill="#F8F8F8">
                             <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
@@ -69,38 +69,40 @@
         </div>
 
         <div class="header__menu-nav">
-            <button id="header__nav-button">X</button>
+            <button class="header__nav-button">
+                <!-- id="header__nav-button"-->X
+            </button>
             <nav class="header__navigation display-block" id="menu">
                 <p class="header__text">menu</p>
                 <ul class="header__menu-list">
                     <li>
-                        <h2>man</h2>
+                        <h2 class="header__text-h2">man</h2>
                         <ul>
-                            <li><a href="#" class="header__menu-link">1</a></li>
-                            <li><a href="#" class="header__menu-link">2</a></li>
-                            <li><a href="#" class="header__menu-link">3</a></li>
-                            <li><a href="#" class="header__menu-link">4</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Accessories</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Bags</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Denim</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">T-Shirts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h2>woman</h2>
+                        <h2 class="header__text-h2">woman</h2>
                         <ul>
-                            <li><a href="#" class="header__menu-link">5</a></li>
-                            <li><a href="#" class="header__menu-link">6</a></li>
-                            <li><a href="#" class="header__menu-link">7</a></li>
-                            <li><a href="#" class="header__menu-link">8</a></li>
-                            <li><a href="#" class="header__menu-link">9</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Accessories</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Jackets & Coats</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Polos</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">T-Shirts</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Shirts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h2>kids</h2>
+                        <h2 class="header__text-h2">kids</h2>
                         <ul>
-                            <li><a href="#" class="header__menu-link">10</a></li>
-                            <li><a href="#" class="header__menu-link">11</a></li>
-                            <li><a href="#" class="header__menu-link">12</a></li>
-                            <li><a href="#" class="header__menu-link">13</a></li>
-                            <li><a href="#" class="header__menu-link">14</a></li>
-                            <li><a href="#" class="header__menu-link">15</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Accessories</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Jackets & Coats</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Polos</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">T-Shirts</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Shirts</a></li>
+                            <li class="header__link"><a href="#" class="header__menu-link">Bags</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -114,7 +116,7 @@
                 <div class="top_img">
                     <img class="top_man_img" src="img/top-man.png" alt="man" width="800" height="765">
                 </div>
-                <div class="top_img">
+                <div class="top_img top_img-title">
                     <h1 class="top__brand-title">the brand
                         <span class="top__brand-subtitle">of luxerious
                             <span class="top__brand-subtitle--pink">fashion
