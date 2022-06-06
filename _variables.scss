@@ -13,3 +13,12 @@ $color-text: #FFFFFF;
 $color-text-footer: #FBFBFB;
 $color-text-red: #F16D7F;
 $offer-text: uppercase; 
+
+h1 {
+    text-transform: $offer-text;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    }

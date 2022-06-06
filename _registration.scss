@@ -1,0 +1,133 @@
+.registration {
+    padding: 64px 0 96px 0;
+    min-height: 167px;
+    @include flexible;
+
+    &__legend {
+        @include registration-form;
+        padding: 0 0 20.5px 0;
+    }
+
+    &__form {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    fieldset {
+        border: none;
+    }
+    
+    &__padding-bottom1 {
+        padding-bottom: 35px;
+    }
+
+    &__padding-bottom2 {
+        padding-bottom: 5px;
+    }
+
+    &__label,
+    &__input {
+        display: block;
+    }
+
+    &__input {
+        width: 342px;
+        height: 45px;
+        margin-bottom: 20px;
+        border-color: $color-border-reg;
+    }
+
+    &__input-margin {
+        margin-bottom: 31px;  
+    }
+
+    &__input-padding {
+        padding-left: 18px;
+        color: $color-reg-text;
+    }
+
+    &__label {
+        flex-direction: column;
+    }
+
+    &__form-d {
+        display: flex;
+    }
+
+    &__radio-input {
+        display: none;
+    }
+
+    &__radio-label {
+        margin: 0 0 0 27px;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    &__radio-label::before{
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 17px;
+        border: 1px solid #A4A4A4;
+        border-radius: 50%;
+        left: -27px;
+    }
+
+    &__radio-input:checked + &__radio-label:before {
+        background-image: url(img/check.png);
+    }
+
+    &__info {
+        width: 50%;
+    }
+
+    &__info-text {
+        @include registration-text();
+        margin: 0;
+        padding: 0;
+    }
+
+    &__info-header {
+    text-transform: $offer-text;
+    }
+    
+    &__item {
+        list-style: none;
+        margin: 0 0 16px 30px;
+        position: relative;
+    }
+
+    &__item::before {
+        content: " ";
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        background-image: url(img/check.png);
+        left: -26px;
+        top: 10px;
+    }
+
+    &__text-info {
+        @include registration-text-info;
+    }
+    
+    &__button {
+        width: 167px;
+        padding: 16px 66px 17px 29px;
+        background-color: $color-text-red;
+        border: none;
+        text-transform: $offer-text;
+        color: $color-text;
+        position: relative;
+    }
+
+    &__button::before {
+        content: " ";
+        width: 17px;
+        height: 10px;
+        position: absolute;
+        background-image: url(img/reg-button.png);
+        right: 20px;
+    }
+}
