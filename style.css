@@ -77,17 +77,13 @@ h1 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  min-height: 23px;
-}
-
-.header__nav-button {
-  display: none;
+  position: relative;
 }
 
 .header__navigation {
   position: absolute;
   width: 232px;
-  top: 100%;
+  top: 75px;
   right: 0;
   background: white;
   display: block;
@@ -96,7 +92,6 @@ h1 {
 
 .header .display-block {
   display: block;
-  z-index: 1;
 }
 
 .header__text {
@@ -151,6 +146,15 @@ h1 {
   background-color: #F8F3F4;
 }
 
+.header__info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header__info-text {
   font-weight: 400;
   font-size: 24px;
@@ -158,6 +162,40 @@ h1 {
   text-transform: uppercase;
   color: #F16D7F;
   padding: 59px 0 0 0;
+}
+
+.header__text-right {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main__choise {
+  min-height: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main__choise-filter {
+  padding: 51px 0 64px 0;
+  text-transform: uppercase;
+}
+
+.main__choise-characters {
+  padding: 51px 0 64px 0;
+  text-transform: uppercase;
+}
+
+.main__bar-nums {
+  color: #222222;
+  text-align: center;
+  height: 43px;
+  width: 283px;
+  padding: 48.5px 0 96.5px 0;
 }
 
 .top {
