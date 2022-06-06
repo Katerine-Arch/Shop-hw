@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    @include font-family;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    @include v-h();
+   }

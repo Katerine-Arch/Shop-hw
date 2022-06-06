@@ -1,40 +1,10 @@
-$color-bg: #222222;
-$color-bg-footer: #222224;
-$color-menu:#E8E8E8;
-$color-top: #F1E4E6;
-$color-top-menu: #F8F3F4;
-$color-offer: #E5E5E5;
-$color-card: #F8F8F8;
-$color-card-text: #5D5D5D;
-$color-link: #6F6E6E; 
-$color-border-reg: #A4A4A4;
-$color-reg-text: #B1B1B1;
-$color-text: #FFFFFF;
-$color-text-footer: #FBFBFB;
-$color-text-red: #F16D7F;
-$offer-text: uppercase; 
-
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    @include font-family;
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
+@import url(_mixins.scss);
+@import url(_variables.scss);
+@import url(_general.scss);
+@import url(_reset.scss);
 
 h1 {
     text-transform: $offer-text;
-}
-
-.visually-hidden {
- @include v-h();
 }
 
 .header {
