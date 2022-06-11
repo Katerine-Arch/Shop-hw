@@ -29,22 +29,22 @@
     }
 
     &__item-woman {
-        background-image: url(img/women.jpg);
+        background-image: url(/img/women.jpg);
         @include offer__img;  
     }
 
     &__item-man {
-        background-image: url(img/Man.jpg);
+        background-image: url(/img/Man.jpg);
         @include offer__img;  
     }
 
     &__item-kids {
-        background-image: url(img/Kids.jpg);
+        background-image: url(/img/Kids.jpg);
         @include offer__img;  
     }
     
     &__item-acs {
-        background-image: url(img/Acs.jpg);
+        background-image: url(/img/Acs.jpg);
         width: 100%;
         height: 180px;
         margin-top: 30px;
