@@ -21,10 +21,12 @@
 
     &__logo {
     padding-top: 18px;
+    min-height: 75px;
     }
 
     &__icon {
     padding-top: 30px;
+    min-height: 75px;
     }
 
     &__icon-nav {
@@ -61,7 +63,7 @@
     &__navigation {
     position: absolute;
     width: 232px;
-    top: 75px;
+    //top: 75px;
     right: 0;
     background: white;
     display: block;

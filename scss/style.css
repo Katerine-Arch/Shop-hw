@@ -101,10 +101,12 @@ body {
 
 .header__logo {
   padding-top: 18px;
+  min-height: 75px;
 }
 
 .header__icon {
   padding-top: 30px;
+  min-height: 75px;
 }
 
 .header__icon-nav:hover, .header__icon-nav:focus {
@@ -131,7 +133,6 @@ body {
 .header__navigation {
   position: absolute;
   width: 232px;
-  top: 75px;
   right: 0;
   background: white;
   display: block;
