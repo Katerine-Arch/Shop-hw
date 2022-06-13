@@ -30,7 +30,8 @@
     }
 
     &__icon-nav {
-         
+        fill: $color-menu;
+        
     }
 
     &__icon-nav:hover,
@@ -47,6 +48,7 @@
     &__button {
         @include icon;
         position: relative;
+        fill: $color-menu;
     }
 
     &__menu-nav {

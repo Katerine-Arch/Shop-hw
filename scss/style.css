@@ -109,6 +109,10 @@ body {
   min-height: 75px;
 }
 
+.header__icon-nav {
+  fill: #E8E8E8;
+}
+
 .header__icon-nav:hover, .header__icon-nav:focus {
   cursor: pointer;
   fill: #F16D7F;
@@ -118,6 +122,7 @@ body {
   background-color: transparent;
   border: none;
   position: relative;
+  fill: #E8E8E8;
 }
 
 .header__menu-nav {
