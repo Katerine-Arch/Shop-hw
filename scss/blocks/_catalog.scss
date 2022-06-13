@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .catalog {
     background-color: $color-offer;
   
@@ -163,4 +164,171 @@
     &__button-decor:active {
         opacity: 0.7;
     }
+=======
+.catalog {
+    background-color: $color-offer;
+  
+    &__container {
+        @include flexible;
+    }
+
+    &__h2 {
+        @include h2;
+    }
+
+    &__info {
+        @include text;
+        line-height: 36px;
+        margin-bottom: 48px;
+    }
+
+    &__card {
+        list-style: none;
+    }
+   
+    &__img {
+        background: $color-card-text;
+        min-width: 360px;
+        min-height: 420px;
+    }
+
+   &__card-text {
+        min-height: 581px;
+        width: 360px;
+        background-color: $color-card;
+        margin: 0 30px 30px 0;
+    }
+
+    &__wrapper-button {
+        position: absolute;
+        top: 40%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 139px;
+        height: 43px;
+        text-align: right;
+        padding: 0 16px 0 0;
+        background: none;
+        color: $color-text;
+        border: 1px solid $color-text;
+        //position: relative;
+    }
+
+    &__button-style {
+        text-decoration: none;
+        color: $color-text;
+        z-index: 1; 
+    }
+
+    &__wrapper-button::before {
+        content: " ";
+        width: 26px;
+        height: 24px;
+        position: absolute;
+        background-image: url(img/cart.png);
+        left: 14px;
+        top: 10px;
+    }
+
+    &__wrapper-overlay {
+        position: relative;
+    }
+
+    &__wrapper-overlay::before {
+        content: '';
+        width: 100%;
+        min-height: 420px;
+        background: rgba(0, 0, 0, 0.46);
+        position: absolute;
+        top: 0;
+        //display: none;
+    }
+
+    &__wrapper-overlay::before,
+    &__wrapper-button {
+        display: none;
+    }
+
+    &__card-text:hover  
+    &__wrapper-overlay::before {
+        display: block;
+    }
+
+    &__card-text:hover
+    &__wrapper-button {
+        display: block;
+    }
+
+
+    h3 {
+        padding: 0 0 0 18px;
+        text-transform: $offer-text;
+    }
+
+    &__text {
+        padding: 0 0 0 18px;
+    }
+
+    &__text-margin {
+        margin: 25px 0 12.65px 0;
+    }
+
+    &__text-about{
+        @include catalog__text-about;
+    }
+
+    &__price {
+        color: $color-text-red;
+    }
+
+    &__margin-last {
+        margin: 0 0 30px 0;
+    }
+
+    &__button-product {
+        position: relative;
+        left: 43%;
+        margin: 48.5px 0 95.5px 0;
+        width: 211px;
+        height: 47px;
+        color: $color-text-red;
+        font-size: 16px;
+        line-height: 19px;
+        border: solid #F16D7F 1px;
+    }
+
+    &__button-product:hover,
+    &__button-decor:hover,
+    &__button-product:focus,
+    &__button-decor:focus 
+        {
+        background-color: $color-text-red;
+        cursor: pointer;
+        outline: none;
+        opacity: 0.7;
+    }
+
+    &__button-product:active, 
+    &__button-decor:active 
+        {
+        opacity: 0.7;
+    }
+
+    &__button-decor {
+        text-decoration: none;
+        color: $color-text-red;
+    }
+
+    &__button-decor:hover,
+    &__button-decor:focus {
+        color: $color-text;
+        cursor: pointer;
+        outline: none;
+        opacity: 0.5;
+    }
+
+    &__button-decor:active {
+        opacity: 0.7;
+    }
+>>>>>>> Stashed changes
 }

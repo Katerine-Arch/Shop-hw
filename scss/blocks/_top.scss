@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .top {
     //position: relative;
     background-color: $color-top;
@@ -38,4 +39,46 @@
     &__brand-subtitle--pink {
         color: $color-text-red; 
     }
+=======
+.top {
+    //position: relative;
+    background-color: $color-top;
+    height: 764px;
+    
+    &_img_box {
+        max-width: 100%;
+        @include flexible;
+    }
+
+    &_img {
+        background-repeat: no-repeat;
+        flex-grow: 1;
+        @include flex-center();        
+    }
+
+    &_img-title {
+        //padding-right: 331px;
+    }
+
+    &_man_img {
+       /*width: 50%;*/
+        height: 100%;
+        float: left;
+        background-position: left center;
+    }
+
+    &__brand-title {
+        @include brand-title;
+        //padding-left: 91px;
+    }
+
+    &__brand-subtitle {
+        @include block();
+        @include brand-subtitle;
+    }
+
+    &__brand-subtitle--pink {
+        color: $color-text-red; 
+    }
+>>>>>>> Stashed changes
 }

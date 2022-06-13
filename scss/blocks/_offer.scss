@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .offer {
     padding-top: 65px;
     padding-bottom: 96px;
@@ -54,4 +55,62 @@
         justify-content: center;
         align-items: center;
     }
+=======
+.offer {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    background-color: $color-offer;
+
+    h3 {
+        @include h3;
+    }
+
+    &_text-red {
+        @include p-text-red;
+    }
+
+    &__list{
+        @include flexible;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        @include item-size;
+        flex-direction: column;
+    }
+
+    &__item-text {
+        @include flex-center;
+        justify-content: center;
+    }
+
+    &__item-woman {
+        background-image: url(/img/women.jpg);
+        @include offer__img;  
+    }
+
+    &__item-man {
+        background-image: url(/img/Man.jpg);
+        @include offer__img;  
+    }
+
+    &__item-kids {
+        background-image: url(/img/Kids.jpg);
+        @include offer__img;  
+    }
+    
+    &__item-acs {
+        background-image: url(/img/Acs.jpg);
+        width: 100%;
+        height: 180px;
+        margin-top: 30px;
+        background-repeat: no-repeat;
+        background-color: rgba(33, 22, 22, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+>>>>>>> Stashed changes
 }
