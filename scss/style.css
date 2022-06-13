@@ -759,6 +759,37 @@ body {
           align-items: center;
 }
 
+.cart {
+  min-height: 998px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 96px 0 128px 0;
+}
+
+.cart__items {
+  width: 652px;
+  border: 3px solid black;
+}
+
+.cart__price {
+  width: 360px;
+}
+
+.cart__price-adress {
+  min-height: 272px;
+  margin: 0 0 57px 0;
+  border: 3px solid red;
+}
+
+.cart__price-total {
+  min-height: 360px;
+  background-color: #F5F3F3;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

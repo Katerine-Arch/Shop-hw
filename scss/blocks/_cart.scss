@@ -1,0 +1,27 @@
+.cart {
+    min-height: 998px;
+    @include flexible;
+    padding: 96px 0 128px 0;
+
+&__items {
+    width: 652px;
+    border: 3px solid black;
+}
+
+&__price {
+    width: 360px;
+    
+}
+
+&__price-adress {
+    min-height: 272px;
+    margin: 0 0 57px 0;
+    border: 3px solid red;
+}
+
+&__price-total {
+    min-height: 360px;
+    background-color: $color-cart;
+}
+
+}
