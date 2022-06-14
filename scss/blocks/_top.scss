@@ -43,6 +43,7 @@
     position: relative; 
 
 
+    .top::before,
     &::before {
         content: '';
         position: absolute;
