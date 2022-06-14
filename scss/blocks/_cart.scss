@@ -1,5 +1,5 @@
 .cart {
-    min-height: 998px;
+    min-height: 214px;
     @include flexible;
     padding: 96px 0 128px 0;
 
@@ -16,7 +16,33 @@
 &__price-adress {
     min-height: 272px;
     margin: 0 0 57px 0;
-    border: 3px solid red;
+}
+
+&__price-legend {
+    @include registration-form;
+    text-transform: $offer-text;
+    padding: 0 0 20px 0;
+}
+
+&__price-input {
+    width: 342px;
+    height: 45px;
+    margin-bottom: 20px;
+    border-color: $color-border-reg;
+    border-color: #A4A4A4;
+}
+
+&__input-margin {
+    margin-bottom: 20px;
+}
+
+&__input-padding {
+    padding-left: 18px;
+    color: $color-reg-text;
+}
+
+&__price-button {
+    @include cart-button;
 }
 
 &__price-total {

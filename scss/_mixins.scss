@@ -170,3 +170,16 @@
      color: $color-card-text;
      margin: 0 0 18px 0;
  }
+ 
+@mixin cart-button {
+    width: 100px;
+    height: 34px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: $offer-text;
+    color: $color-border-reg;
+    background-color: $color-text;
+    border-color: #A4A4A4;
+}
+ 

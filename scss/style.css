@@ -760,7 +760,7 @@ body {
 }
 
 .cart {
-  min-height: 998px;
+  min-height: 214px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,7 +782,44 @@ body {
 .cart__price-adress {
   min-height: 272px;
   margin: 0 0 57px 0;
-  border: 3px solid red;
+}
+
+.cart__price-legend {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: uppercase;
+  padding: 0 0 20px 0;
+}
+
+.cart__price-input {
+  width: 342px;
+  height: 45px;
+  margin-bottom: 20px;
+  border-color: #A4A4A4;
+  border-color: #A4A4A4;
+}
+
+.cart__input-margin {
+  margin-bottom: 20px;
+}
+
+.cart__input-padding {
+  padding-left: 18px;
+  color: #B1B1B1;
+}
+
+.cart__price-button {
+  width: 100px;
+  height: 34px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #A4A4A4;
+  background-color: #FFFFFF;
+  border-color: #A4A4A4;
 }
 
 .cart__price-total {
