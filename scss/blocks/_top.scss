@@ -11,7 +11,7 @@
     &_img {
         background-repeat: no-repeat;
         flex-grow: 1;
-        @include flex-center();        
+        @include flex-center();       
     }
 
     &_img-title {
@@ -28,6 +28,16 @@
     &__brand-title {
         @include brand-title;
         //padding-left: 91px;
+        position: relative; 
+    }
+
+    &__brand-title::before {
+        content: '';
+        position: absolute;
+        left: -16px;
+        width: 12px;
+        height: 92px;
+        color: $color-text-red;
     }
 
     &__brand-subtitle {
