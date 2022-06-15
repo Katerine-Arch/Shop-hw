@@ -146,6 +146,23 @@
         margin-right: 7.5px;
     }
 
+    &__icon-list {
+        width: 32px;
+        height: 32px;
+        background-color: white;
+        text-align: center;
+        margin: 0 8px 0 0;
+        border-radius: 20%;
+    }
+
+    &__icon-list:hover {
+        background-color: $color-text-red;
+    }
+
+    &__icon-img {
+        padding: 8.5px 0 0 0;
+    }
+
     &__ct{
         @include footer_ct;
     }

@@ -799,6 +799,20 @@ body {
   padding-top: 30px;
   margin-right: 7.5px;
 }
+.footer__icon-list {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  text-align: center;
+  margin: 0 8px 0 0;
+  border-radius: 20%;
+}
+.footer__icon-list:hover {
+  background-color: #F16D7F;
+}
+.footer__icon-img {
+  padding: 8.5px 0 0 0;
+}
 .footer__ct {
   padding-top: 30px;
   font-weight: 400;
