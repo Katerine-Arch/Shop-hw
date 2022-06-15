@@ -121,6 +121,7 @@ body {
 }
 .header .display-block {
   display: block;
+  z-index: 1;
 }
 .header__text {
   font-weight: 400;
