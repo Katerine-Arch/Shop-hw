@@ -141,8 +141,8 @@
         opacity: 0.7;
     }
 
-    &__button-product:active, 
-    &__button-decor:active 
+    &__button-product:active + 
+    &__button-decor 
         {
         opacity: 0.7;
     }
