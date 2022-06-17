@@ -52,10 +52,12 @@ form {
 }
 
 body {
-  font-family: Lato;
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: Lato;
+  font-weight: 400;
 }
 
 .container {
@@ -139,9 +141,10 @@ body {
   z-index: 1;
 }
 .header__text {
-  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
   text-align: center;
   text-transform: uppercase;
@@ -169,10 +172,11 @@ body {
 }
 .header__menu-link {
   text-decoration: none;
-  color: #6F6E6E;
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  color: #6F6E6E;
   padding: 0 0 11px 64px;
 }
 .header__menu-link:hover {
@@ -188,9 +192,10 @@ body {
   justify-content: space-between;
 }
 .header__info-text {
-  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   color: #F16D7F;
   padding: 59px 0 0 0;
@@ -227,9 +232,10 @@ body {
   align-items: center;
 }
 .top .top__brand-title {
-  font-weight: 900;
   font-size: 48px;
   line-height: 58px;
+  font-weight: 900;
+  font-style: normal;
   padding: 0 0 0 92px;
   position: relative;
 }
@@ -254,9 +260,10 @@ body {
 }
 .top__brand-subtitle {
   display: block;
-  font-weight: 700;
   font-size: 37px;
   line-height: 44px;
+  font-weight: 700;
+  font-style: normal;
 }
 .top__brand-subtitle--pink {
   color: #F16D7F;
@@ -277,17 +284,19 @@ body {
   justify-content: space-between;
 }
 .catalog__h2 {
-  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
   text-align: center;
   text-transform: uppercase;
 }
 .catalog__info {
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   color: #9F9F9F;
   text-align: center;
   line-height: 36px;
@@ -439,9 +448,10 @@ body {
   justify-content: space-between;
 }
 .registration__legend {
-  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
   color: #222222;
   padding: 0 0 20.5px 0;
 }
@@ -504,9 +514,10 @@ body {
   width: 50%;
 }
 .registration__info-text {
-  font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding: 0;
 }
@@ -528,6 +539,10 @@ body {
   top: 10px;
 }
 .registration__text-info {
+  font-size: -size;
+  line-height: -height;
+  font-weight: 300;
+  font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
@@ -559,22 +574,25 @@ body {
   background-color: #E5E5E5;
 }
 .offer h3 {
-  font-weight: 400;
   font-size: 16px;
   line-height: 19.2px;
+  font-weight: 400;
+  font-style: normal;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 .offer_text-red {
+  font-size: 25px;
+  line-height: 28.8px;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   color: #F16D7F;
-  font-size: 25px;
   text-align: center;
   font-weight: bold;
   top: 123px;
   /*position: absolute;*/
   left: 30%;
-  line-height: 28.8px;
 }
 .offer__list {
   display: flex;
@@ -650,9 +668,10 @@ body {
   margin: 0 0 57px 0;
 }
 .cart__price-legend {
-  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
   color: #222222;
   text-transform: uppercase;
   padding: 0 0 20px 0;
@@ -718,9 +737,10 @@ body {
   margin: 0 0 25px 0;
 }
 .footer h4 {
-  font-weight: 400;
   font-size: 19.96px;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
   color: #FBFBFB;
   margin: 0 0 16px 0;
 }

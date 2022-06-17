@@ -23,45 +23,36 @@
         @content;
     }
 }
-@mixin font {
-    
+@mixin font($font-size, $line-height, $font-weight: 400, $font-style: normal) { 
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    font-style: $font-style;
 }
-
  @mixin font-family {
-     font-family: Lato;
-     font-size: 16px;
+    @include font(16px, 19px);
+    font-family: Lato;
      font-weight: 400;
-     line-height: 19px;
  }
  @mixin brand-title {
-     font-weight: 900;
-     font-size: 48px;
-     line-height: 58px;
+    @include font(48px, 58px, 900);
  }
  @mixin brand-subtitle {
-     font-weight: 700;
-     font-size: 37px;
-     line-height: 44px;
+    @include font(37px, 44px, 700);
  }
  @mixin h2 {
-     font-weight: 400;
-     font-size: 30px;
-     line-height: 36px;
+    @include font(30px, 36px, 400);
      color: #222222;
      text-align: center;
      text-transform: $offer-text;
  }
  @mixin h3 {
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 19.2px;
+    @include font(16px, 19.2px);
      color: $color-text;
      text-transform: $offer-text;
  }
  @mixin h4 {
-     font-weight: 400;
-     font-size: 19.96px;
-     line-height: 24px;
+    @include font(19.96px,24px);
      color: $color-text-footer;
      margin: 0 0 16px 0;
  }
@@ -78,59 +69,47 @@
      align-items: center;
  }
  @mixin header-p {
-     font-weight: 400;
-     font-size: 24px;
-     line-height: 29px;
+    @include font(24px, 29px);
      text-transform: $offer-text;
      color: $color-text-red;
      padding: 59px 0 0 0;
  }
  @mixin header-link {
-     color: $color-link;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 17px;
+    @include font(14px, 17px);
+    color: $color-link;
      padding: 0 0 11px 64px;
  }
  @mixin p-text {
-     text-transform: $offer-text;
+    @include font(16px, 19px);
+    text-transform: $offer-text;
      color: $color-text;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 19px;
      text-align: center;
  }
  @mixin p-text-red {
-     text-transform: $offer-text;
+    @include font(25px, 28.8px);
+    text-transform: $offer-text;
      color: $color-text-red;
-     font-size: 25px;
      text-align: center;
      font-weight: bold;
      top: 123px;
      /*position: absolute;*/
      left: 30%;
-     line-height: 28.8px;
  }
  @mixin text {
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 17px;
+    @include font(14px, 17px);
      color: #9F9F9F;
      text-align: center;
  }
  @mixin registration-text {
-     font-weight: 300;
-     font-size: 24px;
-     line-height: 29px;
+    @include font(24px, 29px);
  }
  @mixin registration-form {
-     font-weight: 300;
-     font-size: 16px;
-     line-height: 19px;
+    @include font(16px, 19px, 300);
      color: $color-bg;
  }
  @mixin registration-text-info {
-     font-weight: 300;
+    @include font(-size, -height, 300);
+    font-weight: 300;
      font-size: 13px;
      line-height: 16px;
      color: $color-reg-text;
