@@ -2,6 +2,14 @@
     //position: relative;
     background-color: $color-top;
     height: 764px;
+
+    @include tablet{
+        max-height: 368px;
+    }
+
+    @include mobile {
+        max-height: 363px;
+    }
     
     &_img_box {
         max-width: 100%;
@@ -23,7 +31,7 @@
         padding: 0 0 0 92px;
         position: relative; 
     
-        .top::before,
+        .top::before + 
         &__img-title::before {
             content: '';
             position: absolute;
@@ -35,10 +43,14 @@
     }
 
     &_man_img {
-       /*width: 50%;*/
-        height: 100%;
+        width: 50%;
+        height: auto;
         float: left;
         background-position: left center;
+
+        @include mobile {
+           display: none;
+        }
     }
 
     &__brand-subtitle {

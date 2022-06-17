@@ -51,6 +51,12 @@
         fill: $color-menu;
     }
 
+    &__button-hide {
+        @include mobile {
+            display: none;
+        }
+    }
+
     &__menu-nav {
     display: flex;
     justify-content: flex-end;

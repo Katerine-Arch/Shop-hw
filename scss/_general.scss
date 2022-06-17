@@ -8,8 +8,16 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 71%;
     margin: 0 auto;
+
+    @include tablet{
+        max-width: 96%;
+    }
+
+    @include mobile {
+        max-width: 96%;
+    }
 }
 
 .visually-hidden {
