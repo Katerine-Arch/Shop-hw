@@ -23,16 +23,17 @@
         @content;
     }
 }
-@mixin font($font-size, $line-height, $font-weight: 400, $font-style: normal) { 
+@mixin font($font-size, $line-height, $font-weight: 400, $font-style: normal, $text-transform, $color) { 
     font-size: $font-size;
     line-height: $line-height;
     font-weight: $font-weight;
     font-style: $font-style;
+    text-transform: $text-transform;
+    color: $color;
 }
  @mixin font-family {
     @include font(16px, 19px);
     font-family: Lato;
-     font-weight: 400;
  }
  @mixin brand-title {
     @include font(48px, 58px, 900);
@@ -41,19 +42,14 @@
     @include font(37px, 44px, 700);
  }
  @mixin h2 {
-    @include font(30px, 36px, 400);
-     color: #222222;
+    @include font(30px, 36px, 400, uppercase, $color-bg);
      text-align: center;
-     text-transform: $offer-text;
  }
  @mixin h3 {
-    @include font(16px, 19.2px);
-     color: $color-text;
-     text-transform: $offer-text;
+    @include font(16px, 19.2px, uppercase, $color-text);
  }
  @mixin h4 {
-    @include font(19.96px,24px);
-     color: $color-text-footer;
+    @include font(19.96px,24px, $color-text-footer);
      margin: 0 0 16px 0;
  }
  @mixin icon {
@@ -69,25 +65,19 @@
      align-items: center;
  }
  @mixin header-p {
-    @include font(24px, 29px);
-     text-transform: $offer-text;
-     color: $color-text-red;
+    @include font(24px, 29px, $offer-text, $color-text-red);
      padding: 59px 0 0 0;
  }
  @mixin header-link {
-    @include font(14px, 17px);
-    color: $color-link;
+    @include font(14px, 17px, $color-link);
      padding: 0 0 11px 64px;
  }
  @mixin p-text {
-    @include font(16px, 19px);
-    text-transform: $offer-text;
-     color: $color-text;
+    @include font(16px, 19px, $offer-text, $color-text);
      text-align: center;
  }
  @mixin p-text-red {
-    @include font(25px, 28.8px);
-    text-transform: $offer-text;
+    @include font(25px, 28.8px, $offer-text,  $color-text-red);
      color: $color-text-red;
      text-align: center;
      font-weight: bold;
@@ -108,41 +98,28 @@
      color: $color-bg;
  }
  @mixin registration-text-info {
-    @include font(-size, -height, 300);
-    font-weight: 300;
-     font-size: 13px;
-     line-height: 16px;
+    @include font(13px, 16px, 300);
      color: $color-reg-text;
      width: 359px;
      margin: 0 0 39px 0;
  }
  @mixin footer__about-text {
-     font-weight: 400;
-     font-size: 20px;
-     line-height: 24px;
+    @include font(20px, 24px);
      color: $color-bg-footer;
      text-align: center;
  }
  @mixin text-footer {
-     font-weight: 300;
-     font-size: 13.972px;
-     line-height: 17px;
+    @include font(13.972px, 17px, 300);
      text-align: center;
      color: $color-text-footer;
  }
  @mixin footer__sub-text-bold {
-     font-weight: 700;
-     font-size: 24px;
-     line-height: 167.2%;
+    @include font(24px, 167.2%, 700, $offer-text);
      color: $color-bg-footer;
      font-weight: bold;
-     text-transform: $offer-text;
  }
  @mixin footer__subscrybe-text {
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 30.1px;
-     text-transform: $offer-text;
+    @include font(18px, 30.1px, $offer-text);
      text-align: center;
  }
  @mixin footer_ct {
@@ -165,12 +142,9 @@
  }
  
 @mixin cart-button {
+    @include font(11px, 13px, 300, $offer-text);
     width: 100px;
     height: 34px;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
-    text-transform: $offer-text;
     color: $color-border-reg;
     background-color: $color-text;
     border-color: #A4A4A4;

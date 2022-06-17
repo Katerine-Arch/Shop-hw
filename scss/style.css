@@ -539,13 +539,10 @@ body {
   top: 10px;
 }
 .registration__text-info {
-  font-size: -size;
-  line-height: -height;
-  font-weight: 300;
-  font-style: normal;
-  font-weight: 300;
   font-size: 13px;
   line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
   color: #B1B1B1;
   width: 359px;
   margin: 0 0 39px 0;
@@ -691,11 +688,12 @@ body {
   color: #B1B1B1;
 }
 .cart__price-button {
-  width: 100px;
-  height: 34px;
-  font-weight: 300;
   font-size: 11px;
   line-height: 13px;
+  font-weight: 300;
+  font-style: normal;
+  width: 100px;
+  height: 34px;
   text-transform: uppercase;
   color: #A4A4A4;
   background-color: #FFFFFF;
@@ -745,9 +743,10 @@ body {
   margin: 0 0 16px 0;
 }
 .footer__text {
-  font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
   text-align: center;
   color: #FBFBFB;
 }
@@ -782,9 +781,10 @@ body {
 }
 .footer__about-text {
   width: 360px;
-  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
   color: #222224;
   text-align: center;
 }
@@ -805,16 +805,18 @@ body {
   text-transform: uppercase;
 }
 .footer__subscrybe-text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 30.1px;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   text-align: center;
 }
 .footer__sub-text-bold {
-  font-weight: 700;
   font-size: 24px;
   line-height: 167.2%;
+  font-weight: 700;
+  font-style: normal;
   color: #222224;
   font-weight: bold;
   text-transform: uppercase;
