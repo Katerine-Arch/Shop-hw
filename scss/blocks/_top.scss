@@ -29,12 +29,22 @@
             width: 100%;
         }
     }
-    
+
     .top__brand-title {
         @include brand-title;
         //padding: 0 0 0 88px;
         //position: relative; 
         width: 100%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            //right: 446px;
+            width: 12px;
+            height: 100%;
+            color: $color-text-red;
+            left: -32px;
+        }
 
         @include tablet {
             @include brand-title-tablet;
@@ -44,16 +54,6 @@
             @include brand-title-mobile;
             padding: 148px 0 0 0;
             text-align: center;
-        }
-    
-        &__img-title::before {
-            content: '';
-            position: absolute;
-            right: 446px;
-            width: 12px;
-            height: 100%;
-            color: $color-text-red;
-            z-index: 1;
         }
     }
 
@@ -71,7 +71,7 @@
     &__brand-subtitle {
         //@include block();
         @include brand-subtitle;
-
+        
         @include tablet {
             @include brand-subtitle-tablet;
         }

@@ -242,11 +242,19 @@ body {
   font-style: normal;
   width: 100%;
 }
+.top .top__brand-title::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  color: #F16D7F;
+  left: -32px;
+}
 @media (max-width: 767px) {
   .top .top__brand-title {
     font-size: 44px;
     line-height: 53px;
-    font-weight: 900;
+    font-weight: 400;
     font-style: normal;
   }
 }
@@ -254,20 +262,11 @@ body {
   .top .top__brand-title {
     font-size: 38px;
     line-height: 46px;
-    font-weight: 900;
+    font-weight: 400;
     font-style: normal;
     padding: 148px 0 0 0;
     text-align: center;
   }
-}
-.top .top__brand-title__img-title::before {
-  content: "";
-  position: absolute;
-  right: 446px;
-  width: 12px;
-  height: 100%;
-  color: #F16D7F;
-  z-index: 1;
 }
 .top_man_img {
   width: 50%;
@@ -290,7 +289,7 @@ body {
   .top__brand-subtitle {
     font-size: 24px;
     line-height: 29px;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
   }
 }
@@ -298,7 +297,7 @@ body {
   .top__brand-subtitle {
     font-size: 20px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
   }
