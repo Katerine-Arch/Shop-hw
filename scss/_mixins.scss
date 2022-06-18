@@ -37,19 +37,19 @@
     @include font(48px, 58px, 900);
  }
  @mixin brand-title-tablet {
-    @include font(44px, 53px)
+    @include font(44px, 53px, 900)
  }
  @mixin brand-title-mobile {
-    @include font(38px, 46px)
+    @include font(38px, 46px, 900)
  }
  @mixin brand-subtitle {
     @include font(31px, 37px, 700);
  }
  @mixin brand-subtitle-tablet {
-    @include font(24px, 29px);
+    @include font(24px, 29px, 700);
  }
  @mixin brand-subtitle-mobile {
-    @include font(20px, 24px);
+    @include font(20px, 24px, 700);
  }
  @mixin h2 {
     @include font(30px, 36px, 400);

@@ -230,6 +230,11 @@ body {
   display: flex;
   align-items: center;
 }
+.top__img-title {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
 @media (max-width: 374px) {
   .top__img-title {
     width: 100%;
@@ -254,7 +259,7 @@ body {
   .top .top__brand-title {
     font-size: 44px;
     line-height: 53px;
-    font-weight: 400;
+    font-weight: 900;
     font-style: normal;
   }
 }
@@ -262,7 +267,7 @@ body {
   .top .top__brand-title {
     font-size: 38px;
     line-height: 46px;
-    font-weight: 400;
+    font-weight: 900;
     font-style: normal;
     padding: 148px 0 0 0;
     text-align: center;
@@ -289,7 +294,7 @@ body {
   .top__brand-subtitle {
     font-size: 24px;
     line-height: 29px;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
   }
 }
@@ -297,7 +302,7 @@ body {
   .top__brand-subtitle {
     font-size: 20px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     text-align: center;
   }
