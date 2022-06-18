@@ -1,7 +1,14 @@
 .offer {
-    padding-top: 65px;
-    padding-bottom: 96px;
+    padding: 20px 0 96px 0;
     background-color: $color-offer;
+
+    @include tablet{
+        padding: 65px 0 155px 0;
+    }
+
+    @include mobile {
+        padding: 64px 0 64px 0;
+    }
 
     h3 {
         @include h3;

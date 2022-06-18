@@ -1,14 +1,14 @@
 .top {
     //position: relative;
     background-color: $color-top;
-    height: 764px;
+    min-height: 363px;
 
     @include tablet{
-        max-height: 368px;
+        min-height: 368px;
     }
 
     @include mobile {
-        max-height: 363px;
+        min-height: 363px;
     }
     
     &_img_box {

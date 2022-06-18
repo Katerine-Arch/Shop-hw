@@ -207,16 +207,16 @@ body {
 
 .top {
   background-color: #F1E4E6;
-  height: 764px;
+  min-height: 363px;
 }
 @media (max-width: 767px) {
   .top {
-    max-height: 368px;
+    min-height: 368px;
   }
 }
 @media (max-width: 374px) {
   .top {
-    max-height: 363px;
+    min-height: 363px;
   }
 }
 .top_img_box {
@@ -608,9 +608,18 @@ body {
 }
 
 .offer {
-  padding-top: 65px;
-  padding-bottom: 96px;
+  padding: 20px 0 96px 0;
   background-color: #E5E5E5;
+}
+@media (max-width: 767px) {
+  .offer {
+    padding: 65px 0 155px 0;
+  }
+}
+@media (max-width: 374px) {
+  .offer {
+    padding: 64px 0 64px 0;
+  }
 }
 .offer h3 {
   font-size: 16px;
