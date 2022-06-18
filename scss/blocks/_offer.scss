@@ -21,13 +21,20 @@
     &__list{
         @include flexible;
         flex-wrap: wrap;
-        padding-bottom: 30px;
         justify-content: space-between;
     }
 
     &__item {
         @include item-size;
         flex-direction: column;
+
+        @include tablet{
+            width: 31.6%;
+        }
+    
+        @include mobile {
+            width: 31.6%;
+        }
     }
 
     &__item-text {
@@ -56,7 +63,7 @@
         height: 180px;
         margin-top: 30px;
         background-repeat: no-repeat;
-        background-color: rgba(33, 22, 22, 0.7);
+        //background-color: rgba(33, 22, 22, 0.7);
         display: flex;
         justify-content: center;
         align-items: center;
