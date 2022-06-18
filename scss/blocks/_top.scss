@@ -24,14 +24,28 @@
 
     &__img-title {
         //padding-right: 331px;
-    }
 
+        @include mobile {
+            width: 100%;
+        }
+    }
+    
     .top__brand-title {
         @include brand-title;
-        padding: 0 0 0 92px;
-        position: relative; 
+        //padding: 0 0 0 88px;
+        //position: relative; 
+        width: 100%;
+
+        @include tablet {
+            @include brand-title-tablet;
+        }
+
+        @include mobile {
+            @include brand-title-mobile;
+            padding: 148px 0 0 0;
+            text-align: center;
+        }
     
-        .top::before + 
         &__img-title::before {
             content: '';
             position: absolute;
@@ -39,6 +53,7 @@
             width: 12px;
             height: 100%;
             color: $color-text-red;
+            z-index: 1;
         }
     }
 
@@ -54,8 +69,17 @@
     }
 
     &__brand-subtitle {
-        @include block();
+        //@include block();
         @include brand-subtitle;
+
+        @include tablet {
+            @include brand-subtitle-tablet;
+        }
+
+        @include mobile {
+            @include brand-subtitle-mobile;
+            text-align: center;
+        }
     }
 
     &__brand-subtitle--pink {
