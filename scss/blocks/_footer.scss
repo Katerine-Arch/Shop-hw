@@ -65,7 +65,7 @@
     }
 
     &__bottom {
-        //flex-direction: column;
+        flex-direction: column;
         min-height: 100%;
         width: 100%;
         justify-content: space-between;
@@ -130,7 +130,7 @@
     }
 
     &__subscrybe {
-        width: 557px;
+        width: 50%;
         flex: 0 0 auto;
         
         @include tablet{
@@ -139,8 +139,21 @@
 
         @include mobile {
             max-width: 96%;
-            }
+        }
     }
+
+    &__subscrybe-form {
+        padding: 32px 0 0 0;
+
+        @include tablet{
+            padding: 27px 0 0 0;
+        }
+
+        @include mobile {
+            padding: 22px 0 0 0;
+        }
+    }
+    
 
     &__copy {
         background-color: $color-bg-footer;

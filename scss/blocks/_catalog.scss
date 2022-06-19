@@ -132,6 +132,16 @@
         font-size: 16px;
         line-height: 19px;
         border: solid #F16D7F 1px;
+
+        @include tablet{
+            margin: 0 0 65px 0;
+            left: 40%;
+        }
+    
+        @include mobile {
+            margin: 0 0 96.5px 0;
+            left: 20%;
+        }
     }
 
     &__button-product:hover,

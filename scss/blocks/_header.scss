@@ -57,6 +57,23 @@
         }
     }
 
+    &__icon-cart::before {
+        content: '5';
+        color: $color-card;
+        background-color: $color-text-red;
+        @include font(14px, 12px);
+        position: absolute;
+        right: -4px;
+        top: -7px;
+        z-index: 2;
+    }
+
+    &__icon-cart::after {
+        background-image: url(/img/ellipse.svg);
+        width: 19px;
+        height: auto;
+    }
+
     &__menu-nav {
     display: flex;
     justify-content: flex-end;
