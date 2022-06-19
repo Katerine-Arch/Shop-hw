@@ -126,7 +126,7 @@ body {
     display: none;
   }
 }
-.header__icon-cart::before {
+.header__card::before {
   content: "5";
   color: #F8F8F8;
   background-color: #F16D7F;
@@ -139,7 +139,7 @@ body {
   top: -7px;
   z-index: 2;
 }
-.header__icon-cart::after {
+.header__card::after {
   background-image: url(/img/ellipse.svg);
   width: 19px;
   height: auto;

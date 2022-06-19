@@ -57,7 +57,7 @@
         }
     }
 
-    &__icon-cart::before {
+    &__card::before {
         content: '5';
         color: $color-card;
         background-color: $color-text-red;
@@ -68,7 +68,7 @@
         z-index: 2;
     }
 
-    &__icon-cart::after {
+    &__card::after {
         background-image: url(/img/ellipse.svg);
         width: 19px;
         height: auto;
