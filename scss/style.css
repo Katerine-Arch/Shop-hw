@@ -1086,6 +1086,7 @@ body {
 }
 .footer__copy-text {
   display: flex;
+  justify-content: space-between;
 }
 .footer__icon {
   display: flex;
