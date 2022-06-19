@@ -3,14 +3,23 @@
     flex-direction: column;
 
    &__top {
-       height: 341px;
+       min-height: 341px;
        background-color: $color-bg-footer;
+
+       @include tablet{
+        min-height: 610px;
+    }
    } 
    
    &__top-list {
     padding-top: 103px;
     align-items: center;
     @include flexible;
+
+    @include tablet{
+    flex-direction: column;
+    padding-top: 48px;
+    }
    }
 
    &__top-info {
@@ -20,6 +29,11 @@
        align-items: center;
        flex-direction: column;
        margin: 0 30px 0 0;
+
+       @include tablet{
+        padding: 0 0 48px 0;
+        width: 48%;
+        }
    }
 
    &__icon-delivery {
@@ -36,6 +50,14 @@
 
     h4 {
         @include h4;
+
+        @include tablet{
+            text-align: center;
+        }
+    
+        @include mobile {
+            text-align: center;
+        }
     }
 
     &__text {
@@ -48,6 +70,12 @@
         width: 100%;
         justify-content: space-between;
         display: flex;
+
+        @include mobile {
+        justify-content: center;
+        align-items: center;
+        flex-flow: column-reverse;
+            }
     }
 
     &__bottom-info {
@@ -60,6 +88,14 @@
         display: flex;
         flex: 1 0 auto;
         position: absolute;
+
+        @include tablet{
+        flex-direction: column;
+        }
+    
+        @include mobile {
+        flex-direction: column;
+        }
     }
 
     &__about {
@@ -75,11 +111,24 @@
 
     &__about-img {
         padding-bottom: 30px;
+
+        @include tablet{
+            padding: 53px 0 30px 0;
+        }
+    
+        @include mobile {
+            padding: 53px 0 30px 0;
+        }
     }
 
     &__about-text {
         width: 360px;
         @include footer__about-text;
+
+        @include mobile {
+            @include footer__about-text-mobile; 
+            width: 75%;
+        }
     }
 
     &__subscrybe {
@@ -96,6 +145,10 @@
         position: relative;
         top: 440px;
         width: 100%;
+       
+            @include mobile {
+            min-height: 143px;
+            }
     }
 
     &__subscrybe-text {
@@ -104,6 +157,11 @@
 
     &__subscrybe-text {
         @include footer__subscrybe-text;
+
+        @include mobile {
+            @include footer__subscrybe-text-mobile; 
+            //width: 67%;
+        }
     }
     
     &__sub-text-bold {

@@ -141,6 +141,9 @@
      color: $color-bg-footer;
      text-align: center;
  }
+ @mixin footer__about-text-mobile{
+    @include font(19px, 22.8px, 400)
+ }
  @mixin text-footer {
     @include font(13.972px, 17px, 300);
      text-align: center;
@@ -156,6 +159,9 @@
     @include font(18px, 30.1px);
      text-align: center;
      text-transform: $offer-text;
+ }
+ @mixin footer__subscrybe-text-mobile {
+    @include font(14px, 21.45px);
  }
  @mixin footer_ct {
      padding-top: 30px;
