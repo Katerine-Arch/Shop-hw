@@ -648,6 +648,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 374px) {
+  .offer__list {
+    flex-direction: column;
+  }
+}
 .offer__item {
   width: 32%;
   flex-direction: column;
@@ -659,7 +664,8 @@ body {
 }
 @media (max-width: 374px) {
   .offer__item {
-    width: 31.6%;
+    margin: 0 0 32px 0;
+    width: 100%;
   }
 }
 .offer__item-text {
@@ -669,39 +675,74 @@ body {
 }
 .offer__item-woman {
   background-image: url(/img/women.jpg);
-  min-height: 167px;
+  min-height: 360px;
   background-color: rgba(33, 22, 22, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-image: 100%;
+  background-repeat: no-repeat;
   background-size: 100%;
+}
+@media (max-width: 767px) {
+  .offer__item-woman {
+    min-height: 168px;
+  }
+}
+@media (max-width: 374px) {
+  .offer__item-woman {
+    min-height: 247px;
+  }
 }
 .offer__item-man {
   background-image: url(/img/Man.jpg);
-  min-height: 167px;
+  min-height: 360px;
   background-color: rgba(33, 22, 22, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-image: 100%;
+  background-repeat: no-repeat;
   background-size: 100%;
+}
+@media (max-width: 767px) {
+  .offer__item-man {
+    min-height: 168px;
+  }
+}
+@media (max-width: 374px) {
+  .offer__item-man {
+    min-height: 247px;
+  }
 }
 .offer__item-kids {
   background-image: url(/img/Kids.jpg);
-  min-height: 167px;
+  min-height: 360px;
   background-color: rgba(33, 22, 22, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-image: 100%;
+  background-repeat: no-repeat;
   background-size: 100%;
+}
+@media (max-width: 767px) {
+  .offer__item-kids {
+    min-height: 168px;
+  }
+}
+@media (max-width: 374px) {
+  .offer__item-kids {
+    min-height: 247px;
+  }
 }
 .offer__item-acs {
   background-image: url(/img/Acs.jpg);
+  background-position: center;
+  background-size: 100%;
   width: 100%;
   height: 180px;
   margin-top: 30px;
@@ -709,6 +750,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 374px) {
+  .offer__item-acs {
+    height: 111px;
+    background-size: 200%;
+    margin: 0;
+  }
 }
 
 .cart {
