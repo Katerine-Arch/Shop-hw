@@ -70,6 +70,7 @@
         width: 100%;
         justify-content: space-between;
         display: flex;
+        //flex-direction: column;
 
         @include mobile {
         justify-content: center;
@@ -87,15 +88,12 @@
         align-items: center;
         display: flex;
         flex: 1 0 auto;
-        position: absolute;
+        //position: absolute;
 
         @include tablet{
         flex-direction: column;
         }
-    
-        @include mobile {
-        flex-direction: column;
-        }
+ 
     }
 
     &__about {
@@ -134,6 +132,14 @@
     &__subscrybe {
         width: 557px;
         flex: 0 0 auto;
+        
+        @include tablet{
+            max-width: 96%;
+        }
+
+        @include mobile {
+            max-width: 96%;
+            }
     }
 
     &__copy {
