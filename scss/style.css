@@ -129,20 +129,16 @@ body {
 .header__card::before {
   content: "5";
   color: #F8F8F8;
-  background-color: #F16D7F;
   font-size: 14px;
   line-height: 12px;
   font-weight: 400;
   font-style: normal;
   position: absolute;
-  right: -4px;
-  top: -7px;
-  z-index: 2;
-}
-.header__card::after {
+  right: -6px;
+  top: 45px;
   background-image: url(/img/ellipse.svg);
   width: 19px;
-  height: auto;
+  height: 19px;
 }
 .header__menu-nav {
   display: flex;
