@@ -99,7 +99,7 @@
  }
  @mixin header-link {
     @include font(14px, 17px);
-     padding: 0 0 11px 64px;
+     //padding: 0 0 11px 64px;
      color: $color-link;
  }
  @mixin p-text {

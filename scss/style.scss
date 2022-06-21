@@ -1,8 +1,8 @@
-@import './reset';
+@import './_reset';
 @import "./_variables";
 @import "./_mixins";
 @import "./_general";
-@import "./bootstrap";
+@import "./_bootstrap";
 
 @import "./blocks/_header";
 @import "./blocks/_top";
