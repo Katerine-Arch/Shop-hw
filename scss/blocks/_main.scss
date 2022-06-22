@@ -4,9 +4,13 @@
      display: flex;
      justify-content: space-evenly;
     }
+
+    &__dropdown {
+    
+    }
  
     &__choise-filter {
-     padding: 51px 0 64px 0;
+     //padding: 51px 0 64px 0;
      text-transform: $offer-text;
     }
  
@@ -23,4 +27,14 @@
      padding: 48.5px 0 96.5px 0;
     }
  }
+
+    .btn-secondary {
+        color: $color-bg;
+        background-color: none;
+        height: 17px;
+        width: 44px;
+        padding: 51px 0 64px 0;
+    }
+
+
 

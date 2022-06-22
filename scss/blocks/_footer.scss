@@ -89,6 +89,7 @@
         display: flex;
         flex: 1 0 auto;
         //position: absolute;
+        
 
         @include tablet{
         flex-direction: column;
