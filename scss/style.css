@@ -527,6 +527,23 @@ body {
   padding: 51px 0 64px 0;
 }
 
+a.page-link {
+  color: #222222;
+}
+
+.product__carousel {
+  min-height: 777px;
+}
+.product__carousel-img {
+  margin: 0 auto;
+}
+.product__description {
+  min-height: 601px;
+}
+.product__catalog {
+  min-height: 837px;
+}
+
 .registration {
   padding: 64px 0 96px 0;
   min-height: 167px;
