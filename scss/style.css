@@ -140,7 +140,7 @@ body {
   font-style: normal;
   position: absolute;
   right: -6px;
-  top: 45px;
+  top: 32px;
   background-image: url(/img/ellipse.svg);
   width: 19px;
   height: 19px;
@@ -700,6 +700,7 @@ body {
 .offer__item {
   width: 32%;
   flex-direction: column;
+  text-decoration: none;
 }
 @media (max-width: 767px) {
   .offer__item {
@@ -711,6 +712,9 @@ body {
     margin: 0 0 32px 0;
     width: 100%;
   }
+}
+.offer__item-product:hover {
+  cursor: pointer;
 }
 .offer__item-text {
   display: flex;
