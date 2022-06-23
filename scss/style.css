@@ -534,6 +534,9 @@ a.page-link {
 .product__carousel {
   min-height: 777px;
 }
+.product__carousel-slide {
+  background-color: #b1b1b1;
+}
 .product__carousel-img {
   margin: 0 auto;
 }

@@ -4,6 +4,10 @@
         min-height: 777px;
     }
 
+    &__carousel-slide {
+        background-color: $color-carousel;
+    }
+
     &__carousel-img {
         margin: 0 auto;
     }
@@ -15,5 +19,6 @@
     &__catalog {
         min-height: 837px;
     }
+    
 }
 
