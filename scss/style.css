@@ -546,7 +546,10 @@ a.page-link {
 .product__catalog {
   min-height: 837px;
 }
-
+.product__description {
+  width: 71%;
+  background-color: red;
+}
 .registration {
   padding: 64px 0 96px 0;
   min-height: 167px;
