@@ -548,8 +548,37 @@ a.page-link {
 }
 .product__description {
   width: 71%;
-  background-color: red;
+  background-color: #F8F8F8;
+  margin-top: -3.25rem;
 }
+.product__description-about {
+  width: 59%;
+  margin-left: 20%;
+  padding: 65px 0 65px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.product__description-dropdown {
+  width: 32%;
+  margin-left: 33%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 0 41px 0;
+}
+.product__description-button {
+  color: #6F6E6E;
+  background-color: #F8F8F8;
+  border: none;
+}
+.product__description-button {
+  text-align: center;
+}
+.product__description-btn {
+  width: 211px;
+  height: 48px;
+}
+
 .registration {
   padding: 64px 0 96px 0;
   min-height: 167px;

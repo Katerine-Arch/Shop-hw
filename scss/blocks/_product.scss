@@ -22,14 +22,57 @@
 
     &__description {
         width: 71%;
-        background-color: red;
+        background-color: $color-card;
+        margin-top: -3.25rem;
+        
     }
 
     &__description-cart {
         
     }
 
+    &__description-about {
+        //max-height: 50%;
+        width: 59%;
+        margin-left: 20%;
+        padding: 65px 0 65px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 
+    &__description-about::before {
+
+    }
+
+    &__description-about::after {
+        
+    }
+
+    &__description-dropdown {
+        width: 32%;
+        margin-left: 33%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 0 41px 0;
+    }
+ 
+    &__description-button {
+        color: #6F6E6E;
+        background-color: $color-card;
+        border: none;
+    }
+
+    &__description-button {
+        text-align: center;
+    }
+
+    &__description-btn {
+        width: 211px;
+        height: 48px;
+    }
     
 }
+
+
 
