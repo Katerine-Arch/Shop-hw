@@ -205,7 +205,7 @@
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         border: none;
-        
+        text-transform: capitalize;
     }
 
     &__subscrybe-button {
@@ -216,6 +216,7 @@
         border: none;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
+        text-transform: capitalize;
     }
 
     &__copy-text {
@@ -232,8 +233,8 @@
 
     &__icon-list {
         width: 32px;
-        height: 32px;
-        background-color: white;
+        //height: 32px;
+        //background-color: white;
         text-align: center;
         margin: 0 8px 0 0;
         //border-radius: 20%;
@@ -241,8 +242,13 @@
         height: auto;
     }
 
-    &__icon-list:hover {
-        background-color: $color-text-red;
+    &__icon-white:hover {
+        color: $color-text-red;
+    }
+
+    &__icon-white {
+        font-size: 25px;
+        color: $color-card;
     }
 
     &__icon-img {

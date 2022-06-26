@@ -13,10 +13,11 @@
     }
 
     &__description {
-        min-height: 601px;
+        //min-height: 601px;
     }
 
     &__catalog {
+        padding: 129px 0 0 0;
         min-height: 837px;
     }
 
@@ -24,7 +25,7 @@
         width: 71%;
         background-color: $color-card;
         margin-top: -3.25rem;
-        
+        border: 1px solid $color-card-text;
     }
 
     &__description-cart {
@@ -58,6 +59,7 @@
     }
  
     &__description-button {
+        margin: 0 0 65px 0;
         color: #6F6E6E;
         background-color: $color-card;
         border: none;
