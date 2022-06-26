@@ -88,6 +88,11 @@ body {
   margin: 0 0 96.5px 0;
 }
 
+.icon__fs48-red {
+  color: #F16D7F;
+  font-size: 48px;
+}
+
 .header {
   background-color: #222222;
 }
