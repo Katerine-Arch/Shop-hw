@@ -175,11 +175,10 @@
      transform: scale(0);
  }
  @mixin catalog__text-about {
-     font-weight: 300;
-     font-size: 14px;
-     line-height: 17px;
-     color: $color-card-text;
-     margin: 0 0 18px 0;
+    @include font(13px, 15.6px, 300);
+     color: $color-bg;
+     margin: 25px 0 18px 0;
+     
  }
  
 @mixin cart-button {

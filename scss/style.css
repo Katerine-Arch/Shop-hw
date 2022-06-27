@@ -421,7 +421,7 @@ body {
 .catalog__wrapper-overlay::before {
   content: "";
   width: 100%;
-  min-height: 420px;
+  height: 59%;
   background: rgba(0, 0, 0, 0.46);
   position: absolute;
   top: 0;
@@ -444,13 +444,28 @@ body {
 }
 .catalog__text-margin {
   margin: 25px 0 12.65px 0;
+  font-size: 13px;
+  line-height: 15.6px;
+  font-weight: 300;
+  font-style: normal;
+  color: #222222;
+  margin: 25px 0 18px 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.6px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .catalog__text-about {
+  font-size: 13px;
+  line-height: 15.6px;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #5D5D5D;
-  margin: 0 0 18px 0;
+  font-style: normal;
+  color: #222222;
+  margin: 25px 0 18px 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.6px;
 }
 .catalog__price {
   color: #F16D7F;
