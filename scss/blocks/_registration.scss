@@ -3,6 +3,16 @@
     min-height: 167px;
     @include flexible;
 
+    @include tablet {
+    padding: 40px 0 96px 0;
+    }
+    
+    @include mobile {
+    padding: 40px 0 96px 0;
+    display: flex;
+    flex-direction: column;
+        }  
+
     &__legend {
         @include registration-form;
         padding: 0 0 20.5px 0;
@@ -54,6 +64,10 @@
         display: flex;
     }
 
+    &__radio {
+        display: flex;
+    }
+
     &__radio-input {
         display: none;
     }
@@ -80,6 +94,11 @@
 
     &__info {
         width: 50%;
+    
+        @include tablet {
+        padding: 40px 0 0 0;
+        }
+        
     }
 
     &__info-text {
@@ -113,7 +132,7 @@
     }
     
     &__button {
-        width: 167px;
+        //width: 167px;
         padding: 16px 66px 17px 29px;
         background-color: $color-text-red;
         border: none;

@@ -614,6 +614,18 @@ a.page-link {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .registration {
+    padding: 40px 0 96px 0;
+  }
+}
+@media (max-width: 375px) {
+  .registration {
+    padding: 40px 0 96px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .registration__legend {
   font-size: 16px;
   line-height: 19px;
@@ -657,6 +669,9 @@ a.page-link {
 .registration__form-d {
   display: flex;
 }
+.registration__radio {
+  display: flex;
+}
 .registration__radio-input {
   display: none;
 }
@@ -679,6 +694,11 @@ a.page-link {
 }
 .registration__info {
   width: 50%;
+}
+@media (max-width: 768px) {
+  .registration__info {
+    padding: 40px 0 0 0;
+  }
 }
 .registration__info-text {
   font-size: 24px;
@@ -715,7 +735,6 @@ a.page-link {
   margin: 0 0 39px 0;
 }
 .registration__button {
-  width: 167px;
   padding: 16px 66px 17px 29px;
   background-color: #F16D7F;
   border: none;
