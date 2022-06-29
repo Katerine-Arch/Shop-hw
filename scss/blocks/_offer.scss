@@ -43,6 +43,11 @@
         }
     }
 
+    &__card {
+        width: 100%;
+        text-align: center;
+    }
+
     &__item-product:hover {
         cursor: pointer;
     }
@@ -65,6 +70,10 @@
     &__item-kids {
         background-image: url(/img/Kids.jpg);
         @include offer__img;  
+
+        @include mobile {
+            margin: 0;
+        }
     }
     
     &__item-acs {
@@ -87,7 +96,7 @@
         @include mobile {
         height: 111px;
         background-size: 200%;
-        margin: 30px 0 0 0;
+        margin: 0;
         }
     }
 }

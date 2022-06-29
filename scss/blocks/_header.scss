@@ -94,6 +94,11 @@
     display: none;
     min-height: 764px;
     z-index: 1;
+
+    @include mobile {
+    width: 100%;
+    }
+   
     }
 
     .display-block {

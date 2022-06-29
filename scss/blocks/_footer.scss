@@ -33,6 +33,7 @@
        @include tablet{
         padding: 0 0 48px 0;
         width: 48%;
+        margin: 0;
         }
    }
 
@@ -70,16 +71,16 @@
         width: 100%;
         justify-content: space-between;
         display: flex;
-        //flex-direction: column;
-        background-image: url(/img/footer-bg.jpg);
-        //background-color: #f4f4f4;
-        //width: 100%;
 
         @include mobile {
         justify-content: center;
         align-items: center;
         //flex-flow: column-reverse;
         }
+    }
+
+    &__bottom-bg {
+        background-image: url(/img/footer-bg.jpg);
     }
 
     &__bottom-info {
@@ -106,6 +107,10 @@
         align-items: center;
         display: flex;
         flex-direction: column;
+
+        @include tablet{
+            padding: 54px 0 0 0;
+        }
     }
 
     &__about-coursive {
@@ -116,11 +121,11 @@
         padding-bottom: 30px;
 
         @include tablet{
-            padding: 53px 0 30px 0;
+            //padding: 53px 0 30px 0;
         }
     
         @include mobile {
-            padding: 53px 0 30px 0;
+            //padding: 53px 0 30px 0;
         }
     }
 
@@ -130,7 +135,7 @@
 
         @include mobile {
         @include footer__about-text-mobile; 
-            width: 75%;
+            //width: 75%;
         }
     }
 
@@ -143,7 +148,10 @@
         }
 
         @include mobile {
-            max-width: 96%;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
         }
     }
 
@@ -184,7 +192,7 @@
 
         @include mobile {
             @include footer__subscrybe-text-mobile; 
-            //width: 67%;
+            width: 67%;
         }
     }
     

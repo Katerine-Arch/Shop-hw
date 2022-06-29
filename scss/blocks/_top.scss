@@ -38,6 +38,10 @@
             background-color: $color-text-red;
             //left: -32px;
             left: -16px;
+        
+            @include mobile {
+                top: 145px;
+            }
         }
 
         @include mobile {
