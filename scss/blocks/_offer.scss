@@ -3,7 +3,7 @@
     background-color: $color-offer;
 
     @include tablet{
-        padding: 20px 0 135px 0;
+        padding: 20px 0 125px 0;
     }
 
     @include mobile {
@@ -81,7 +81,7 @@
         align-items: center;
 
         @include tablet {
-            margin: 20px 0 0 0;
+            margin: -15px 0 0 0;
         }
 
         @include mobile {

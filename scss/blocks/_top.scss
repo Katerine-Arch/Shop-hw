@@ -1,10 +1,10 @@
 .top {
     //position: relative;
     background-color: $color-top;
-    min-height: 363px;
+    //min-height: 363px;
 
     @include tablet{
-        min-height: 368px;
+        min-height: 367px;
     }
 
     @include mobile {
