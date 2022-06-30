@@ -236,6 +236,9 @@ body {
   text-transform: uppercase;
   color: #F16D7F;
 }
+.header__text-black {
+  color: #222222;
+}
 .header__text-right {
   font-weight: 300;
   font-size: 14px;
@@ -531,6 +534,14 @@ body {
 }
 .catalog__button-decor:active {
   opacity: 0.7;
+}
+.catalog__dropdown-text {
+  text-transform: uppercase;
+  color: #6F6E6E !important;
+}
+.catalog__drop-black {
+  font-weight: 700;
+  color: #222222 !important;
 }
 
 .main__choise {

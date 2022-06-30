@@ -140,8 +140,8 @@
                 <p class="header__info-text header__text-left">
                     new arrivals
                 </p>
-                <p class="header__info-text header__text-right">
-                    home / men / new arrivals
+                <p class="header__info-text header__text-black header__text-right">
+                    home / men <span class="header__info-text header__text-right">/ new arrivals </span>
                 </p>
             </div>
         </div>
@@ -150,25 +150,62 @@
     <main>
         <section class="main__choise container">
             <div class="dropdown main__dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <p class="main__choise-filter">
-                        filter
-                    </p>
-                </a>
 
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <div class="product__description-dropdown">
+                    <div class="dropdown">
+                        <button
+                            class="product__description-button btn  dropdown-toggle  catalog__dropdown-text  catalog__drop-black"
+                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            filter
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">CATEGORY</a></li>
+                            <li><a class="dropdown-item" href="#">BRAND</a></li>
+                            <li><a class="dropdown-item" href="#">DESIGNER</a></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
 
-            <p class="main__choise-characters">
-                trending now /
-                size /
-                price
-            </p>
+            <div class="product__description-dropdown">
+                <div class="dropdown">
+                    <button class="product__description-button btn  dropdown-toggle  catalog__dropdown-text"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        trending now
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Black</a></li>
+                        <li><a class="dropdown-item" href="#">White</a></li>
+                        <li><a class="dropdown-item" href="#">Blue</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="product__description-button btn  dropdown-toggle  catalog__dropdown-text"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        size
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">XS</a></li>
+                        <li><a class="dropdown-item" href="#">S</a></li>
+                        <li><a class="dropdown-item" href="#">M</a></li>
+                        <li><a class="dropdown-item" href="#">L</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="product__description-button btn  dropdown-toggle  catalog__dropdown-text"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        price
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#"> 0-150$ </a></li>
+                        <li><a class="dropdown-item" href="#"> 150-500$ </a></li>
+                        <li><a class="dropdown-item" href="#"> 500-2200$</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section class="main__catalog">

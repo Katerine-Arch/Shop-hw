@@ -162,6 +162,10 @@
     @include header-p;
     }
 
+    &__text-black {
+        color: $color-bg;
+    }
+
     &__text-right {
     font-weight: 300;
     font-size: 14px;

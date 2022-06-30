@@ -186,4 +186,15 @@
     &__button-decor:active {
         opacity: 0.7;
     }
+
+    &__dropdown-text {
+        text-transform: $offer-text;
+        color: $color-link !important;
+    }
+
+    &__drop-black {
+        font-weight: 700;
+        color: $color-bg !important;
+    }
+
 }
