@@ -769,6 +769,7 @@ a.page-link {
 }
 .registration__info {
   width: 50%;
+  padding: 0 0 0 128px;
 }
 @media (max-width: 375px) {
   .registration__info {
