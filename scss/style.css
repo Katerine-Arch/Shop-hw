@@ -569,6 +569,16 @@ body {
     justify-content: flex-end !important;
   }
 }
+@media (max-width: 375px) {
+  .catalog__link-padding {
+    padding: 0.35rem 0.55rem !important;
+  }
+}
+@media (max-width: 375px) {
+  .catalog__pagination-margin {
+    margin: 0 0 64.5px;
+  }
+}
 
 .main__choise {
   min-height: 132px;

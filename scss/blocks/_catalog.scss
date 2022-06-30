@@ -210,4 +210,18 @@
             justify-content: flex-end !important;
         }
     }
+
+    &__link-padding {
+        @include mobile {
+            padding: 0.35rem 0.55rem !important;
+        }
+    }
+
+    &__pagination-margin {
+        @include mobile {
+         margin: 0 0 64.5px;
+        }
+    }
+
+
 }
