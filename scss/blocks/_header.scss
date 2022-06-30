@@ -147,6 +147,10 @@
     height: 148px;
     background-color: $color-top-menu;
     
+    @include mobile {
+        text-align: center;
+    }
+    
     }
 
     &__info-container {

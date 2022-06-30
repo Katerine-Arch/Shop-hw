@@ -95,16 +95,21 @@
     &__info {
         width: 50%;
     
-        @include tablet {
+        @include mobile {
         padding: 40px 0 0 0;
         }
-        
+     
     }
 
     &__info-text {
         @include registration-text();
         margin: 0;
         padding: 0;
+        
+        @include tablet {
+        @include font(16px, 19px);
+        }
+
     }
 
     &__info-header {
@@ -125,6 +130,10 @@
         background-image: url(/img/check.png);
         left: -26px;
         top: 10px;
+
+        @include tablet {
+            top: 0;
+            }
     }
 
     &__text-info {
