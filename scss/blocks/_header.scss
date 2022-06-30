@@ -156,14 +156,29 @@
     &__info-container {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
+    }
+    
     }
 
     &__info-text {
     @include header-p;
+
+    @include mobile {
+        padding: 24px 0 32px 0;
+    }
+    
     }
 
     &__text-black {
         color: $color-bg;
+        
+        @include mobile {
+        padding: 0 0 46px 0;
+        }
+        
     }
 
     &__text-right {

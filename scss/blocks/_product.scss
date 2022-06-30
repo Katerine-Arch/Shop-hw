@@ -56,6 +56,11 @@
         display: flex;
         justify-content: space-evenly;
         padding: 0 0 41px 0;
+
+        @include mobile {
+            margin-left: 1%;
+            padding: 0;
+        }
     } 
  
     &__description-button {
@@ -63,6 +68,11 @@
         color: #6F6E6E;
         background-color: $color-card;
         border: none;
+        
+        @include mobile {
+            margin: 0;
+        }
+
     }
 
     &__description-button {
@@ -73,6 +83,7 @@
         width: 211px;
         height: 48px;
     }
+    
     
 }
 

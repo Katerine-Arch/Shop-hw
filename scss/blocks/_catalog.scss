@@ -189,7 +189,7 @@
 
     &__dropdown-text {
         text-transform: $offer-text;
-        color: $color-link !important;
+        color: $color-link !important;     
     }
 
     &__drop-black {
@@ -197,4 +197,17 @@
         color: $color-bg !important;
     }
 
+    &__drop-size {
+        @include mobile {
+            font-size: 12px !important;
+        }
+        
+    }
+
+    &__drop-center {
+        @include mobile {
+            align-items: center;
+            justify-content: flex-end !important;
+        }
+    }
 }
