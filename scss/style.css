@@ -582,6 +582,11 @@ body {
     min-height: 81px;
   }
 }
+@media (max-width: 375px) {
+  .main__dropdown {
+    margin: 0;
+  }
+}
 .main__choise-filter {
   text-transform: uppercase;
 }
