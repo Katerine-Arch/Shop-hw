@@ -3,6 +3,10 @@
      min-height: 132px;
      display: flex;
      justify-content: space-evenly;
+
+     @include tablet {
+        //justify-content: space-between;
+     }
     }
 
     &__dropdown {
