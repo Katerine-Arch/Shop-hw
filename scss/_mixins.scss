@@ -102,6 +102,16 @@
      //padding: 0 0 11px 64px;
      color: $color-link;
  }
+ @mixin product-grey {
+    @include font(18px, 21px, 300);
+     color: $color-link;
+     text-transform: $offer-text;
+ }
+ @mixin product-red {
+    @include font(14px, 17px, 300);
+     color: $color-text-red;
+     text-transform: $offer-text;
+ }
  @mixin p-text {
     @include font(16px, 19px);
      text-align: center;
@@ -178,7 +188,6 @@
     @include font(13px, 15.6px, 300);
      color: $color-bg;
      margin: 25px 0 18px 0;
-     
  }
  
 @mixin cart-button {

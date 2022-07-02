@@ -647,22 +647,65 @@ a.page-link {
   width: 71%;
   background-color: #F8F8F8;
   margin-top: -3.25rem;
-  border: 1px solid #5D5D5D;
+  border: 1px solid #b1b1b1;
 }
 .product__description-about {
   width: 59%;
   margin-left: 20%;
-  padding: 65px 0 65px 0;
+  padding: 65px 0 0 0;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.product__red-line {
+  color: #EF5B70;
+  border: 1px solid;
+  margin: 12px 0 12px 0;
+}
+.product__grey-line {
+  margin: 36px 0 0 0;
+}
+.product__description-red {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+.product__description-grey {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+  font-style: normal;
+  color: #6F6E6E;
+  text-transform: uppercase;
+}
+.product__description-text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  color: #9F9F9F;
+  text-align: center;
+  padding: 48px 0 32px 0;
+  margin: 0 auto;
+}
+.product__description-price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 59px 0 0 0;
+  text-transform: uppercase;
+  color: #F16D7F;
+  padding: 0;
 }
 .product__description-dropdown {
   width: 32%;
   margin-left: 33%;
   display: flex;
   justify-content: space-evenly;
-  padding: 0 0 41px 0;
 }
 @media (max-width: 768px) {
   .product__description-dropdown {
@@ -676,7 +719,7 @@ a.page-link {
   }
 }
 .product__description-button {
-  margin: 51px 0 24px 0;
+  margin: 64px 0 48px 0;
   color: #6F6E6E;
   background-color: #F8F8F8;
   border: none;
@@ -694,9 +737,26 @@ a.page-link {
 .product__description-button {
   text-align: center;
 }
+.product__button-margin {
+  margin: 0 0 65px 0;
+}
 .product__description-btn {
   width: 211px;
   height: 48px;
+  border-color: #F16D7F;
+}
+.product__btn-href {
+  text-decoration: none;
+  color: #F16D7F;
+  position: relative;
+}
+.product__btn-href::before {
+  content: "";
+  width: 26px;
+  height: 24px;
+  background-image: url(/img/cart-red.png);
+  position: absolute;
+  left: -40px;
 }
 
 .registration {
