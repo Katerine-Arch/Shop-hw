@@ -4,6 +4,12 @@
      display: flex;
      justify-content: space-evenly;
 
+
+     @include tablet {
+        min-height: 0;
+    }
+    
+
      @include mobile {
         justify-content: space-between;
         width: 96% !important;
