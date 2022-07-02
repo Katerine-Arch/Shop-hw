@@ -149,6 +149,7 @@
         font-size: 16px;
         line-height: 19px;
         border: solid #F16D7F 1px;
+        transition: all 2s;
 
         @include tablet{
             margin: 0 0 65px 0;
@@ -170,6 +171,7 @@
         cursor: pointer;
         outline: none;
         opacity: 0.7;
+        transform: scale(1.5);
     }
 
     &__button-product:active + 

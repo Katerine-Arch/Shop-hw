@@ -525,6 +525,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   border: solid #F16D7F 1px;
+  transition: all 2s;
 }
 @media (max-width: 768px) {
   .catalog__button-product {
@@ -543,6 +544,7 @@ body {
   cursor: pointer;
   outline: none;
   opacity: 0.7;
+  transform: scale(1.5);
 }
 .catalog__button-product:active + .catalog__button-decor {
   opacity: 0.7;
