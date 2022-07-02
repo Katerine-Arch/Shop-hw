@@ -599,6 +599,7 @@ body {
 }
 @media (max-width: 375px) {
   .main__dropdown {
+    top: 24px;
     margin: 0;
   }
 }

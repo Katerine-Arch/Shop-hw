@@ -20,7 +20,8 @@
     &__dropdown {
     
         @include mobile {
-            margin: 0;
+        top: 24px;
+        margin: 0;
         }
     }
  
