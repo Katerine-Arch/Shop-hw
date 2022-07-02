@@ -2,6 +2,20 @@
 
     &__carousel {
         min-height: 777px;
+
+        @include tablet {
+            min-height: 624px;
+        }
+
+        @include mobile {
+            min-height: 454px;
+        }
+    }
+    
+    &__carousel-margin {
+        @include mobile {
+            margin: 85px 0 0 0;
+        }
     }
 
     &__carousel-slide {
@@ -10,11 +24,25 @@
 
     &__carousel-img {
         margin: 0 auto;
+
+        @include tablet {
+        width: 274px;
+        height: auto;
+        }
+
+        @include mobile {
+            //width: 473px;
+            height: auto;
+            }
     }
 
     &__catalog {
         padding: 129px 0 0 0;
         min-height: 837px;
+
+        @include mobile {
+            padding: 64px 0 0 0;
+        }
     }
 
     &__description {
@@ -36,6 +64,17 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        @include tablet {
+            width: 80%;
+            margin-left: 10%;
+            }
+
+        @include tablet {
+            width: 86%;
+            margin: 0 auto;
+        }
+           
     }
 
     &__red-line {
@@ -80,8 +119,8 @@
         }
         
         @include mobile {
-            margin-left: 1%;
-            padding: 0;
+            //margin-left: 1%;
+            padding: 50px 0 65px 0;
         }
     } 
  

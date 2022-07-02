@@ -17,6 +17,10 @@
 
     &__card {
         list-style: none;
+
+        @include mobile {
+            padding: 0;
+        }
     }
    
     &__img {
@@ -34,6 +38,10 @@
         //min-height: 581px;
         background-color: $color-card;
         margin: 0 30px 30px 0;
+
+        @include mobile {
+            margin: 0;
+        }
     }
 
     &__wrapper-button {
