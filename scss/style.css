@@ -83,6 +83,16 @@ body {
   transform: scale(0);
 }
 
+/* .video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 0;
+
+    &__p {
+        position: relative;
+    }
+}*/
 .pagination {
   justify-content: center;
   margin: 0 0 96.5px 0;
