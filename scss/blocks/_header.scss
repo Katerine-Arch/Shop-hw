@@ -58,7 +58,7 @@
     }
 
     &__card::before {
-        content: '5';
+        content: '0';
         color: $color-card;
         @include font(14px, 12px);
         position: absolute;
