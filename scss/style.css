@@ -114,6 +114,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header__controls-flex {
+  display: flex;
+}
+.header__form {
+  height: 100%;
+  align-items: center;
+}
 .header__margin-logo {
   margin-right: 41px;
 }
@@ -127,6 +134,9 @@ body {
 .header__icon {
   padding-top: 30px;
   min-height: 75px;
+}
+.header__icon-search {
+  padding-top: 0;
 }
 .header__icon-nav {
   fill: #E8E8E8;

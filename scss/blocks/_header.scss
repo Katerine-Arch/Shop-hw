@@ -11,6 +11,16 @@
     justify-content: space-between;
     }
 
+    &__controls-flex {
+        display: flex;
+    }
+
+    &__form {
+    height: 100%;
+    align-items: center;
+    //padding: 30px 0 0 0;
+    }
+
     &__margin-logo {
     margin-right: 41px;
     }
@@ -29,9 +39,12 @@
     min-height: 75px;
     }
 
+    &__icon-search {
+    padding-top: 0;
+    }
+
     &__icon-nav {
         fill: $color-menu;
-        
     }
 
     &__icon-nav:hover,
