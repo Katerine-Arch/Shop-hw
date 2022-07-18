@@ -147,7 +147,7 @@ body {
   }
 }
 .header__card::before {
-  content: "5";
+  content: "0";
   color: #F8F8F8;
   font-size: 14px;
   line-height: 12px;
@@ -164,6 +164,9 @@ body {
   display: flex;
   justify-content: flex-end;
   position: relative;
+}
+.header__nav-button {
+  display: none;
 }
 .header__navigation {
   position: absolute;
