@@ -12,11 +12,11 @@ body {
     margin: 0 auto;
 
     @include tablet{
-        max-width: 100% !important; 
+        max-width: 75% !important; 
     }
 
     @include mobile {
-        max-width: 100% !important;
+        max-width: 90% !important;
     }
 }
 
