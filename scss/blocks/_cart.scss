@@ -135,6 +135,11 @@
 &__price {
     width: 40%
     
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
 
 &__price-adress {
