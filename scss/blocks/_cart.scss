@@ -1,26 +1,63 @@
+.text-red {
+    color: $color-text-red;
+}
+
 .cart {
     min-height: 214px;
     @include flexible;
     padding: 96px 0 128px 0;
 
 &__items {
-    width: 652px;
+    width: 100%;
     //border: 3px solid black;
 }
 
 &__items-box {
     display: flex;
-
+    flex-direction: column;
 }
 
 &__item-list {
-    width: 652px;
+    width: 75%;
     height: 306px;
-    border: 3px solid black;
+    margin: 0 0 40px 0;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px 0 rgba(40,40,40,1) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+&__item-list::before {
+    content: " ";
+    position: absolute;
+    background-image: url(/img/cross.png);
+    width: 19px;
+    height: 19px;
+    right: 22px;
+    top: 28px;
+}
+}
+
+&__item-img {
+    width: 38%;
+}
+
+&__item-header {
+    text-transform: $offer-text;
+    @include font(24px, 29px);
+}
+
+&__item-p {
+    width: 100%;
+    padding: 22px 0 0 31px;
+    margin: 0 auto !important;
 }
 
 &__price {
-    width: 360px;
+    width: 40%
     
 }
 
