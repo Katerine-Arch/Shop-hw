@@ -266,7 +266,7 @@ body {
 }
 @media (max-width: 375px) {
   .header__info-text {
-    padding: 24px 0 32px 0;
+    padding: 50px 0 32px 0;
   }
 }
 .header__text-black {
@@ -1170,6 +1170,13 @@ a.page-link {
   justify-content: space-between;
   padding: 96px 0 128px 0;
 }
+@media (max-width: 768px) {
+  .cart {
+    display: flex;
+    flex-direction: column;
+    padding: 39px 0 128px 0;
+  }
+}
 .cart__items {
   width: 100%;
 }
@@ -1189,12 +1196,32 @@ a.page-link {
   justify-content: space-between;
   position: relative;
 }
+@media (max-width: 768px) {
+  .cart__item-list {
+    width: 95%;
+  }
+}
+@media (max-width: 375px) {
+  .cart__item-list {
+    height: 188px;
+  }
+}
 .cart__item-list::before {
   content: " ";
   position: absolute;
   background-image: url(/img/cross.png);
   width: 19px;
   height: 19px;
+  right: 22px;
+  top: 28px;
+}
+@media (max-width: 768px) {
+  .cart__item-list::before {
+    width: 10px;
+    height: 11px;
+    right: 17px;
+    top: 17px;
+  }
 }
 .cart__item-img {
   width: 38%;
@@ -1206,10 +1233,22 @@ a.page-link {
   font-weight: 400;
   font-style: normal;
 }
+@media (max-width: 768px) {
+  .cart__item-header {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
 .cart__item-p {
-  width: 100%;
-  padding: 22px 0 0 31px;
+  padding: 22px 100px 62px 31px;
   margin: 0 auto !important;
+}
+@media (max-width: 768px) {
+  .cart__item-p {
+    padding: 20px 0 0 17px;
+  }
 }
 .cart__price {
   width: 40%;

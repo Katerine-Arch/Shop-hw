@@ -7,6 +7,12 @@
     @include flexible;
     padding: 96px 0 128px 0;
 
+    @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding: 39px 0 128px 0;
+    }
+
 &__items {
     width: 100%;
     //border: 3px solid black;
@@ -28,6 +34,14 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @include tablet {
+    width: 95%;
+        }
+
+    @include mobile {
+        height: 188px;
+    }
 }
 
 &__item-list::before {
@@ -38,8 +52,15 @@
     height: 19px;
     right: 22px;
     top: 28px;
+
+@include tablet {
+    width: 10px;
+    height: 11px;
+    right: 17px;
+    top: 17px;
 }
 }
+
 
 &__item-img {
     width: 38%;
@@ -48,12 +69,20 @@
 &__item-header {
     text-transform: $offer-text;
     @include font(24px, 29px);
+
+@include tablet {
+    @include font(14px, 17px); 
+}
 }
 
 &__item-p {
-    width: 100%;
-    padding: 22px 0 0 31px;
+    //width: 100%;
+    padding: 22px 100px 62px 31px;
     margin: 0 auto !important;
+
+@include tablet {
+    padding: 20px 0 0 17px;
+}
 }
 
 &__price {
