@@ -5,6 +5,17 @@
 
 &__items {
     width: 652px;
+    //border: 3px solid black;
+}
+
+&__items-box {
+    display: flex;
+
+}
+
+&__item-list {
+    width: 652px;
+    height: 306px;
     border: 3px solid black;
 }
 
